@@ -1,6 +1,6 @@
 # Worldwide Back-End Manager
 
-[Author](http://www.3aworldwide.com.br/assets/images/logo-3a-topo.png)
+[![Author](http://www.3aworldwide.com.br/assets/images/logo-3a-topo.png)
 [![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
 [![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
 
