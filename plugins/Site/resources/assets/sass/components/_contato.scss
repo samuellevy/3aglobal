@@ -1,0 +1,493 @@
+.banner-contato {
+	background: url('../images/banners-internos/contato.jpg');
+	height: 740px;
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	justify-content: center;
+	flex-direction: column;
+
+	.content {
+		justify-content: center;
+	    align-items: center;
+	    display: flex;
+	}
+
+	.content-3a .line-text {
+		font-family: 'Verlag-Bold';
+		color: #fff;
+		display: block;
+		font-size: 75px;
+		line-height: 1.2em;
+		text-align: center;
+		text-transform: uppercase;
+		font-variant:normal;
+	}
+}
+
+.contact-form {
+	width: 80%;
+    margin: 0 auto;
+}
+
+.line-form {
+	width: 100%;
+	clear: both;
+	float: left;
+}
+
+.line-1 {
+    margin-bottom: 8px;
+}
+
+.line-2 {
+	margin-bottom: 38px;
+}
+
+.line-3 {
+	margin-bottom: 14px;
+}
+
+.line-4 {
+	margin-bottom: 30px;
+}
+
+.label-text {
+	float: left;
+	font-family: 'Verlag-Book';
+	color: #2e2926;
+	font-size: 48px;
+	margin-right: 10px;
+
+	.number {
+		font-size: 61px;
+	}
+}
+
+.label-dpto {
+	float: left;
+	font-family: 'Verlag-Book';
+	color: #2e2926;
+	font-size: 48px;
+	margin-right: 10px;
+    margin-top: 14px;
+}
+
+.label-virgula {
+	float: left;
+	font-family: 'Verlag-Book';
+	color: #2e2926;
+	text-transform: uppercase;
+	font-size: 48px;
+	margin-right: 12px;
+    margin-top: 14px;
+    margin-left: 35px;
+}
+
+.atenciosamente {
+	text-transform: none;
+}
+
+.trigger-select {
+	float: left;
+
+	a {
+		display: block;
+		font-family: 'Verlag-XLight';
+		font-size: 48px;
+		text-decoration: none;
+		float: left;
+		color: #3864ba;
+	    position: relative;
+	    margin-top: 14px;
+
+	    i {
+			font-size: 30px;
+			position: relative;
+			top: 4px;
+	    }
+
+    	.line-animate {
+			display: block;
+			position: absolute;
+			bottom: 18px;
+			right: -25px;
+			width: 21px;
+			height: 2px;
+			background: #3864ba;
+		}
+	}
+}
+
+.trigger-field {
+	float: left;
+
+	a {
+		display: block;
+		font-family: 'Verlag-XLight';
+		font-size: 48px;
+		text-decoration: none;
+		float: left;
+		color: #3864ba;
+	    position: relative;
+	    margin-top: 14px;
+
+    	.line-animate {
+			display: block;
+			position: absolute;
+			bottom: 18px;
+			right: -25px;
+			width: 21px;
+			height: 2px;
+			background: #3864ba;
+		}
+	}
+}
+
+.field-select {
+	float: left;
+}
+
+.contato {
+	padding-top: 125px;
+}
+
+.contato .dropdown-menu {
+	background: #2e2926;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-menu li {
+	background: #2e2926;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-menu li:hover {
+	background: #3864ba;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-menu li.selected {
+	background: #3864ba;
+}
+
+.contato .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background: #3864ba;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-toggle {
+	border: none;
+    margin-top: 25px;
+    box-shadow: none;
+    background: #fff;
+    outline: none !important;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-toggle:hover {
+	background: #fff;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+	font-family: 'Verlag-XLight';
+	font-size: 30px;
+	//text-transform: uppercase;
+}
+
+.contato .bootstrap-select.btn-group {
+	width: 100% !important;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-menu li a {
+	color:: #fff;
+	font-family: 'Verlag-XLight';
+	font-size: 30px;
+	//text-transform: uppercase;
+}
+
+.contato .bootstrap-select.btn-group .dropdown-toggle .caret {
+	display: none;
+}
+
+.contato textarea {
+	width: 100%;
+	height: 140px;
+	resize: none;
+	outline: none;
+	border: none;
+	font-family: 'Verlag-XLight';
+	font-size: 30px;
+	display: none;
+	background: transparent;
+}
+
+.enviar-form {
+	width: 260px;
+	height: 51px;
+	display: block;
+	background: #3864ba;
+	color: #fff;
+    font-family: 'Verlag-Light';
+	border: none;
+	font-size: 20px;
+	//margin: 10px auto;
+}
+
+.textarea {
+	width: 100%;
+    height: 140px;
+    border: 1.5px solid #ebebeb;
+
+    .trigger-textarea {
+    	margin-top: 0;
+    	margin-left: 15px;
+    }
+}
+
+.input-field {
+	padding-top: 32px;
+
+	.campo-texto {
+		border: none;
+		outline: none;
+		font-family: 'Verlag-XLight';
+	    font-size: 30px;
+	    text-transform: uppercase;
+	}
+}
+
+.name {
+	display: none;
+}
+
+.email {
+	display: none;
+}
+
+.mensagem-sucesso {
+	font-family: 'Verlag-XLight';
+    font-size: 28px;
+    margin-top: 15px;
+    display: none;
+}
+
+.menu-cidades-contato {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+
+
+.menu-cidades-contato .lista-cidades-contato {
+	width: 97%;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 0;
+    margin: 0 auto 40px;
+    z-index: 12;
+}
+
+.menu-cidades-contato .lista-cidades-contato li:last-child {
+	margin-right: 0;
+}
+
+.menu-cidades-contato .lista-cidades-contato li.slick-current {
+	border-bottom: 5px solid #fff;
+}
+
+.menu-cidades-contato .lista-cidades-contato li.slick-slide {
+	width: 201px !important;
+}
+
+.climatempo .lista-cidades-contato li {
+	color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Verlag-Book';
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.climatempo .lista-cidades-contato li span {
+    display: block;
+    text-align: center;
+}
+
+.climatempo .lista-cidades-contato li.slick-slide {
+	outline: none;
+}
+
+.clima-contato {
+    margin-top: 100px;
+	height: auto;
+}
+
+.clima-contato .cidade {
+	height: 623px;
+}
+
+.clima-contato .cidade .info {
+    margin-top: 75px;
+}
+
+.clima-contato .cidade .uf {
+	font-size: 247px;
+	margin-top: 70px;
+}
+
+.clima-contato .clock-contact {
+	margin-top: 110px;
+	margin-bottom: 0;
+}
+
+/*.clima-contato .weather-temp {
+	font-size: 95px;
+}*/
+
+.clima-contato .cidade.rio-de-janeiro {
+	background: url('../images/contato/RJ.jpg');
+}
+
+.clima-contato .cidade.sao-paulo {
+	background: url('../images/contato/SP.jpg');
+}
+
+.clima-contato .cidade.belo-horizonte {
+	background: url('../images/contato/BH.jpg');
+}
+
+.clima-contato .cidade.goiania {
+	background: url('../images/contato/GO.jpg');
+}
+
+.clima-contato .cidade.miami {
+	background: url('../images/contato/MIA.jpg');
+}
+
+.clima-contato .text-form {
+	position: relative;
+	left: 14px;
+	display: none;
+}
+
+@media (max-width: 999px) {
+	.banner-contato {
+	    height: 367px !important;
+
+	    .content-3a img {
+	    	max-width: 80%;
+	    	margin: 0 auto;
+	    }
+	}
+
+	.contato {
+		padding-top: 50px;
+	}
+
+	.label-text {
+		font-size: 22px;
+		float: none;
+	}
+
+	.label-text .number {
+	    font-size: 30px;
+	}
+
+	.trigger-select a {
+	    font-size: 25px;
+	}
+
+	.trigger-select a i {
+		font-size: 20px;
+		top: 2px;
+	}
+
+	.label-dpto {
+		font-size: 22px;
+		float: none;
+	}
+
+	.trigger-field a {
+		font-size: 25px;
+	}
+
+	.textarea .trigger-textarea {
+		margin-left: 10px;
+	}
+
+	.trigger-select a .line-animate {
+		width: 9px;
+		height: 1px;
+		bottom: 10px;
+		right: -12px;
+	}
+
+	.menu-cidades-contato .lista-cidades-contato {
+		width: 100%;
+	    top: 45px;
+	}
+
+	.menu-cidades-contato .lista-cidades-contato li.slick-slide {
+		width: 100px !important;
+	}
+
+	.climatempo .lista-cidades-contato li {
+		margin-right: 15px;
+		font-size: 16px;
+	}
+
+	.clima-contato .cidade .uf {
+		font-size: 80px;
+	    margin-top: 40px;
+	}
+
+	.clima-contato .cidade .info {
+		margin-top: 30px;
+	}
+
+	.clima-contato .newClock {
+		margin: 40px auto !important;
+	}
+
+	.clima-contato .weather {
+		margin: 73px auto;
+	}
+}
+
+@media (max-width: 640px) {
+	.clima-contato .cidade.rio-de-janeiro {
+		background: url(../images/home/RJ-mobile.jpg);
+		background-size: cover;
+	}
+
+	.clima-contato .cidade.sao-paulo {
+		background: url(../images/home/SP-mobile.jpg);
+		background-size: cover;
+	}
+
+	.clima-contato .cidade.belo-horizonte {
+		background: url(../images/home/BH-mobile.jpg);
+		background-size: cover;
+	}
+
+	.clima-contato .cidade.goiania {
+		background: url(../images/home/GO-mobile.jpg);
+		background-size: cover;
+	}
+
+	.clima-contato .cidade.miami {
+		background: url(../images/home/MIA-mobile.jpg);
+		background-size: cover;
+	}
+}
+
+@media (max-width: 640px) {
+	.banner-contato {
+	    background: url(../images/banners-internos/contato-mobile.jpg) no-repeat center center;
+	    height: 367px !important;
+	    background-size: cover
+	}
+}

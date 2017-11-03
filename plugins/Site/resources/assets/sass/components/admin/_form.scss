@@ -1,0 +1,94 @@
+.form {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    fieldset legend {
+        margin-bottom: 32px;
+    }
+    textarea {
+        min-height: 96px;
+        resize: vertical;
+    }
+}
+.form-delete {
+    padding-top: 0px;
+    margin-top: -20px;
+}
+
+.file-block input[type="file"] {
+    display: none;
+}
+.file-block img.preview {
+    display: block;
+    border-style: dashed;
+    border-width: thick;
+    color: silver;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 180px;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+        background: url('../images/checkerboard.png');
+        border-style: solid;
+        color: black;
+        cursor: pointer;
+    }
+}
+.video-preview {
+    display: block;
+    width: 100%;
+
+    &.is-empty {
+        border: thick dashed darken($chrome-color-palette, 15%);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+
+.repeater-item + .repeater-item {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: thin dotted silver;
+}
+
+.panel {
+    .results {
+        margin-left: 10px;
+        position: relative;
+        right: 10px;
+        top: 6px;
+    }
+}
+.search {
+    position: relative;
+
+    input[type="search"] {
+        padding-left: 40px;
+        width: 300px;
+    }
+    input[type="submit"], button[type="submit"] {
+        background-color: transparent;
+        border: none;
+        color: #999999;
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 34px;
+
+        &:hover, &:active {
+            color: darken(#999999, 20%);
+            padding: 0;
+        }
+    }
+}
+
+.parsley-error {
+    border-color: #E96666;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(233, 102, 102, 0.6);
+}
+.parsley-errors-list {
+    margin-bottom: 0;
+}

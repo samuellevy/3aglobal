@@ -1,0 +1,17 @@
+
+#NPM
+/node_modules
+/node_modules/*
+
+#EDITORS
+/.vscode/
+
+#CAKEPHP
+/logs
+/logs/*
+/tmp
+/tmp/*
+
+#VENDORS
+/vendor
+/vendor/*

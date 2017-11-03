@@ -1,0 +1,316 @@
+.banner-global {
+	background: url('../images/banners-internos/global.jpg');
+	height: 740px;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+
+	h2 {
+		font-family: 'Verlag-Black';
+		color: #818d98;
+		opacity: 0.7;
+		font-size: 186px;
+		text-transform: uppercase;
+		position: absolute;
+		bottom: -44px;
+		right: 0;
+	}
+}
+
+.active {
+	fill: #4579bd !important;
+	position: relative;
+}
+
+.mapa {
+	padding-top: 130px;
+	padding-bottom: 60px;
+	overflow: hidden;
+	position: relative;
+
+	.slick-prev:before {
+		color: #58595b;
+	}
+
+	.slick-next:before {
+		color: #58595b;
+	}
+}
+
+.lista-paises {
+	list-style-type: none;
+	margin: 0 auto 60px;
+	border-bottom: 1px solid #58595b;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	z-index: 11;
+}
+
+.lista-paises li {
+	display: inline-block;
+	font-family: 'Verlag-Book';
+	font-size: 16px;
+    margin-left: 19px;
+	cursor: pointer;
+	color: #58595b;
+	position: relative;
+	left: -19px;
+
+	span {
+		display: block;
+		text-align: center;
+	}
+}
+
+.lista-paises li.slick-slide {
+	padding: 0 15px;
+	outline: none;
+}
+
+.lista-paises li.slick-current {
+	border-bottom: 5px solid #58595b;
+}
+
+svg {
+	width: 100%;
+}
+
+.modal-country {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 41px;
+	bottom: 185px;
+	z-index: 23;
+	display: none;
+
+	.icon-location {
+		width: 26px;
+		height: 26px;
+		display: block;
+		background: url('../images/circle-map.png');
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: none;
+	}
+
+	h2 {
+		color: #fff;
+		font-family: 'Verlag-Bold';
+		font-size: 30px;
+	}
+
+	h3 {
+		color: #fff;
+		font-family: 'Verlag-Bold';
+		font-size: 20px;
+		margin-top: 15px;
+		cursor: pointer;
+	}
+
+	span.endereco {
+		display: block;
+		font-family: 'Gotham-Light';
+		font-size: 12px;
+		color: #fff;
+	}
+
+	span.telefone {
+		display: block;
+		font-family: 'Gotham-Medium';
+		font-size: 16px;
+		margin-top: 5px;
+		color: #fff;
+
+		.number {
+			font-size: 12px;
+		}
+	}
+
+	.content-accordion {
+		display: none;
+	}
+
+	.informacoes {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 20px;
+		border-radius: 12px;
+
+		.email-unidade {
+			font-family: Verlag-Book_0;
+			color: #fff;
+			font-size: 23px;
+			text-decoration: none;
+			display: block;
+
+			i {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.modal-country.modal-brasil {
+	top: 406.581787109375px;
+	left: 578.6552734375px;
+}
+
+.path-active {
+	fill: #4579bd !important;
+}
+
+.accordion {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.mapa {
+		display: none;
+	}
+
+	.accordion {
+	   margin-top: 35px;
+	   margin-bottom: 35px;
+	   display: block;
+	   dt, dd {
+	      padding: 10px;
+	      //border: 1px solid black;
+	      &:last-of-type {
+	        //border-bottom: 1px solid black; 
+	      }
+	      a {
+	        display: block;
+	        color: black;
+	        font-weight: bold;
+	      }
+	   }
+	   dt {
+   			width: 100%;
+   			height: 49px;
+   			font-family: 'Verlag-Light';
+   			font-size: 16px;
+   			color: #58595b;
+   			border-top: 1px solid #abacad;
+
+   			a {
+   				display: block;
+   				float: left;
+   				color: #58595b;
+			    margin-top: 5px;
+			    text-decoration: none;
+			    width: 100%;
+			    height: 100%;
+   			}
+
+   			i {
+   				display: block;
+   				float: right;
+   				color: #58595b;
+			    margin-top: 2px;
+   			}
+	   }
+
+	   dt.accordion-active {
+			background: #3864ba;
+			border: none;
+			margin-bottom: 20px;
+
+			a {
+				color: #fff;
+			}
+
+			i {
+				color: #fff;
+				transform: rotate(90deg);
+			}
+	   }
+
+	  dd {
+	     border-top: 0; 
+	     font-size: 12px;
+	     &:last-of-type {
+	       position: relative;
+	       top: -1px;
+	     }
+
+	     .unidade-item {
+	     	display: block;
+	     	margin-bottom: 25px;
+	     }
+
+	     .cidade {
+	     	font-family: 'Verlag-Bold';
+	     	font-size: 20px;
+	     	display: block;
+	     	margin-bottom: 8px;
+	     }
+
+	     .endereco {
+	     	font-family: 'Gotham-Light';
+	     	font-size: 12px;
+	     	display: block;
+	     }
+
+	     .telefone {
+	     	font-family: 'Gotham-Medium';
+	     	font-size: 15px;
+	     	display: block;
+	     	margin-top: 8px;
+
+	     	.ddd {
+	     		font-size: 11px;
+	     	}
+	     }
+
+	     .button-email {
+	     	font-family: 'Verlag-Book';
+		    color: #58595b;
+		    font-size: 20px;
+		    text-decoration: none;
+		    display: block;
+		    outline: none;
+		    margin-bottom: 20px;
+
+		    i {
+				font-size: 10px;
+				border: 1px solid #58595b;
+				padding: 3px;
+				position: relative;
+				top: -3px;
+				left: 2px;
+		    }
+	     }
+	  }
+	}
+}
+
+@media (max-width: 999px) {
+	.banner-global {
+	    height: 397px !important;
+	    display: flex;
+	    align-items: center;
+	    background-size: cover;
+	    justify-content: center;
+	    flex-direction: column;
+
+	    h2 {
+		    font-size: 60px;
+		    position: initial;
+		    color: #fff;
+		    opacity: 1;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.banner-global {
+	    background: url(../images/banners-internos/global-mobile.jpg) center center no-repeat;
+	    height: 397px !important;
+	    background-size: cover;
+	}
+}
