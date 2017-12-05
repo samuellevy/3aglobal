@@ -231,7 +231,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => '',
-            'database' => 'worldwide_gerenciador',
+            'database' => 'manager_3aglobal',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
