@@ -106,4 +106,8 @@ class AffiliatesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function funcao($nome){
+      
+    }
 }
