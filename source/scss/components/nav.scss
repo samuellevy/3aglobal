@@ -1,0 +1,92 @@
+#nav{
+  position: fixed;
+  height:100%;
+  right: 0;
+  width: 320px;
+  background-color: #000;
+  font-family: "Verlag-Light", sans-serif;
+  padding: 60px 0;
+  text-align: left;
+  display: flex;
+
+  .items{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+  }
+
+  a {
+    padding: 30px 0;
+    text-decoration: none;
+    font-size: 45px;
+    color: #818181;
+    display: block;
+    border: none;
+    transition: 0.3s;
+    text-transform: lowercase;
+  }
+
+  a:hover {
+      color: #f1f1f1;
+  }
+
+  .btnMenu {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    text-align: right;
+    padding-right: 20px;
+    right: 5px;
+    .close{
+      width: 50px;
+      color: #818181;
+      font-size: 40px;
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    &.active .close{
+      opacity: 1;
+    }
+  }
+}
+
+.main{
+  margin-left: 0px;
+  transition: margin-left .2s, transform 1s !important;
+  &.navigating{
+    margin-left: -320px;
+    transition: margin-left .2s;
+  }
+}
+
+.btnMenuBox{
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  .btnMenu{
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    color: #000000;
+    float: right;
+    .open{
+      top: 5px;
+      right: 20px;
+      width: 30px;
+      z-index: 9;
+      position: absolute;
+      font-size: 30px;
+      opacity: 1;
+      transition: opacity .5s;
+    }
+    &.active .open{
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    &.inverted{
+      color: #FFFFFF;
+    }
+  }
+}

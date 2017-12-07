@@ -12,9 +12,15 @@
         </a>
     </li>
     <li>
-        <a href="<?= $this->Url->build(["controller" => "Banners","action" => "index"]);?>">
-            <i class="pe-7s-photo"></i>
-            <p>Banners</p>
+        <a href="<?= $this->Url->build(["controller" => "Affiliates","action" => "index"]);?>">
+            <i class="pe-7s-world"></i>
+            <p>Affiliates</p>
+        </a>
+    </li>
+    <li>
+        <a href="<?= $this->Url->build(["controller" => "Affiliates","action" => "index"]);?>">
+            <i class="pe-7s-users"></i>
+            <p>Clients</p>
         </a>
     </li>
 <?php /*
