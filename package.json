@@ -17,6 +17,17 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/3aworldwide/3aglobal-backend#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-inject": "^4.3.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
   }
 }

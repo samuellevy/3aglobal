@@ -1,0 +1,490 @@
+.talktous{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: url("../images/riodejaneiro.jpg");
+    background-size: cover;
+    filter: grayscale(100%);
+  }
+  .bg_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.85);
+  }
+  .box-table{
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    padding: 70px 0;
+    .element-title{
+      top: 0;
+      left: 0;
+      position: absolute;
+      .big_title {
+        color: rgba(255, 255, 255, 0.1);
+        line-height: 0.1em;
+        margin-left: -20px;
+      }
+    }
+    .content{
+      background-color: rgba(255,255,255,.0);
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      .box{
+        width: 100%;
+        display: flex;
+        .split{
+          position: relative;
+          &:first-child{
+            width: 60%;
+            padding-right: 50px;
+          }
+          &:nth-child(2){
+            width: 40%;
+            padding-left: 50px;
+            .text-clients{
+              bottom: 0;
+              //background-color: rgba(0,0,0,0.95);
+              left: 0;
+              padding: 0 20px;
+              height: 70%;
+              width: 90%;
+              margin: 0 10%;
+              &.show{
+                opacity: 1;
+                visibility: visible;
+                transition: all .2s ease-in;
+              }
+            }
+          }
+        }
+        .logo{
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          .logo_img{
+            text-align: left;
+            img{
+              width: 60%; //mudar pra 100% depois
+              height: auto;
+            }
+          }
+        }
+        .text{
+          display: block;
+          width: 100%;
+          color: $white;
+          font-family: 'Open Sans', sans-serif;
+          margin-top: 20px;
+          p{
+            font-size: 16px;
+            margin-bottom: 0;
+          }
+        }
+        .form{
+          text-align: right;
+          color: $white;
+          font-family: 'Open Sans', sans-serif;
+          label{
+            width: 100%;
+          }
+          input{
+            width: 100%;
+            margin-bottom: 10px;
+            border: 0;
+            background-color: rgba(0,0,0,.9);
+            padding: 10px 16px;
+            color: $white;
+            border: 1px #FFF solid;
+            outline: none;
+            &::placeholder {
+              color: $white;
+            }
+          }
+          textarea{
+            width: 100%;
+            height: 100px;
+            background-color: rgba(0,0,0,.9);
+            padding: 10px 16px;
+            color: $white;
+            border: 0;
+            border: 1px #FFF solid;
+            outline: none;
+            &::placeholder {
+              color: $white;
+            }
+          }
+          button{
+            border: 0;
+            padding: 10px 40px;
+            font-family: "Verlag-Bold";
+            font-size: 20px;
+            color: $white;
+            background-color: $black;
+            text-transform: uppercase;
+            margin-top: 10px;
+            border: 1px #FFF solid;
+            display: inline;
+          }
+        }
+        .banner-country{
+          width: 100%;
+          height: auto;
+          img {
+            width: 49%;
+            float: left;
+            margin-top: 10px;
+            height: auto;
+            &:first-child{
+              width: 100%;
+              margin-top: 0;
+              padding: 0;
+            }
+            &:nth-child(2){
+              width: 210;
+              height: 140;
+              object-fit: cover;
+              object-position: center;
+            }
+            &:nth-child(3){
+              margin-left: 2%;
+              width: 210;
+              height: 140;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+        .title{
+          font-family: "Verlag-Bold";
+          font-size: 50px;
+          color: $white;
+          text-transform: lowercase;
+          text-align: left;
+          padding: 60px 0 40px;
+          width: auto;
+          line-height: 50px;
+          opacity: 0.3;
+        }
+        .banner-logos{
+          width: 100%;
+          display: flex;
+          opacity: 1;
+          flex-wrap: wrap;
+          transition: all .2s ease-in;
+          .btn-logo-clients{
+            width: 25%;
+            margin: 0 auto;
+            height: auto;
+            visibility: visible;
+            cursor: pointer;
+            img{
+              width: 100%;
+            }
+            &:first-child{
+              margin-left: 0;
+            }
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+        .text-clients{
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          top: 120px;
+          transition: all .2s ease-in;
+          width: 100%;
+          margin: 0;
+          .head{
+            display: flex;
+            position: relative;
+            width: 100%;
+            .logo-head{
+              width: 25%;
+              margin: 0;
+              height: auto;
+              img{
+                width: 100%;
+              }
+            }
+            .close-btn{
+              width: 40px;
+              margin: auto 0;
+              color: #ffffff;
+              z-index: 2;
+              font-size: 30px;
+              cursor: pointer;
+              position: absolute;
+              right: 0;
+              top: calc(50% - 20px);
+
+            }
+          }
+          .content{
+            p{
+              font-family: $verlag-light;
+              line-height: 25px;
+            }
+          }
+        }
+        .hide{
+          opacity: 0;
+          visibility: hidden;
+          transition: all .2s ease-in;
+        }
+        .show{
+          opacity: 1;
+          visibility: visible;
+          transition: all .2s ease-in;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*
+position: fixed;
+visibility: hidden;
+opacity: 0;
+top: 0;
+-webkit-transition: all .2s ease-in;
+transition: all .2s ease-in;
+margin: 0;
+padding: 0;
+left: 0;
+padding: 0 20px;
+background-color: rgba(0,0,0,.95);
+height: 100%;
+*/
+
+@media only screen and (max-width: 800px) {
+  .talktous{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    .bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-image: url("../images/riodejaneiro.jpg");
+      background-size: cover;
+      filter: grayscale(100%);
+    }
+    .bg_2{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-color: rgba(0,0,0,.85);
+    }
+    .box-table{
+      width: 100%;
+      display: flex;
+      position: relative;
+      z-index: 2;
+      color: #FFF;
+      padding: 70px 0;
+      .element-title{
+        top: 0;
+        left: 0;
+        position: absolute;
+        .big_title {
+          color: rgba(255, 255, 255, 0.4);
+        }
+      }
+      .content{
+        background-color: rgba(255,255,255,.0);
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        .box{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          .split{
+            &:first-child{
+              width: 100%;
+              padding: 20px;
+            }
+            &:nth-child(2){
+              width: 100%;
+              padding: 0 40px;
+              .text-clients{
+                top: 0;
+                background-color: rgba(0,0,0,0.95);
+                left: 0;
+                padding: 0 20px;
+                height: 100%;
+                position: fixed;
+                width: 100%;
+                margin: 0;
+                &.show{
+                  opacity: 1;
+                  visibility: visible;
+                  transition: all .2s ease-in;
+                }
+              }
+            }
+          }
+          .logo{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            .logo_img{
+              text-align: left;
+              img{
+                width: 40%; //mudar pra 100% depois
+                height: auto;
+              }
+            }
+          }
+          .text{
+            display: block;
+            width: 100%;
+            color: $white;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 20px;
+            p{
+              font-size: 14px;
+              margin-bottom: 0;
+            }
+          }
+          .form{
+            text-align: right;
+            color: $white;
+            font-family: 'Open Sans', sans-serif;
+            label{
+              width: 100%;
+            }
+            input{
+              width: 100%;
+              margin-bottom: 10px;
+              border: 0;
+              background-color: rgba(0,0,0,.9);
+              padding: 10px 16px;
+              color: $white;
+              border: 1px #FFF solid;
+              outline: none;
+              &::placeholder {
+                color: $white;
+              }
+            }
+            textarea{
+              width: 100%;
+              height: 100px;
+              background-color: rgba(0,0,0,.9);
+              padding: 10px 16px;
+              color: $white;
+              border: 0;
+              border: 1px #FFF solid;
+              outline: none;
+              &::placeholder {
+                color: $white;
+              }
+            }
+            button{
+              border: 0;
+              padding: 10px 40px;
+              font-family: "Verlag-Bold";
+              font-size: 16px;
+              color: $white;
+              background-color: $black;
+              text-transform: uppercase;
+              margin-top: 10px;
+              border: 1px #FFF solid;
+              display: inline;
+            }
+          }
+          .banner-country{
+            width: 100%;
+            height: auto;
+            img {
+              width: 49%;
+              float: left;
+              margin-top: 10px;
+              height: auto;
+              &:first-child{
+                width: 100%;
+                margin-top: 0;
+                padding: 0;
+              }
+              &:nth-child(2){
+                width: 100%;
+                height: auto;
+              }
+              &:nth-child(3){
+                margin-left: 0;
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+          .title{
+            font-family: "Verlag-Bold";
+            font-size: 40px;
+            color: $white;
+            text-transform: lowercase;
+            text-align: left;
+            padding: 10px 0 20px;
+            width: auto;
+            line-height: 30px;
+          }
+          .banner-logos{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .logo-clients{
+              width: 25%;
+              margin: 0 auto;
+              height: auto;
+              img{
+                width: 100%;
+              }
+              &:first-child{
+                margin-left: 0;
+              }
+              &:last-child{
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

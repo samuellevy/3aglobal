@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Verlag-Black';
+    src: url('../fonts/Verlag-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Verlag-Book';
+    src: url('../fonts/Verlag-Book_0.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Verlag-Light';
+    src: url('../fonts/Verlag-Light_0.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Verlag-XLight';
+    src: url('../fonts/Verlag-XLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Verlag-Bold';
+    src: url('../fonts/Verlag-Bold.woff') format('woff');
+}
+
+/*
+** World map
+* var color
+* class country
+*
+*/
+$brasil-color: #3865B2;
+$estados-unidos-color: tomato;
+$country-color-hover: #666666;
+
+
+body{
+  color: #000;
+}
+.country-br{
+  fill: $brasil-color !important;
+}
+
+.click_more_map{
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.world-map-box{
+  position: absolute;
+  width: 100%;
+  top: 0px;
+
+  svg{
+    width: 1400px;
+  }
+}
+
+.map-box-country{
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  h1{
+      font-family: 'Verlag-Bold';
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0;
+  }
+  .unit{
+    .uf{
+      font-family: 'Verlag-Bold';
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .unit-detail{
+      display: none;
+      .address{
+        font-family: 'Verlag-Book';
+        font-size: 12px;
+      }
+      .tel{
+        font-family: 'Verlag-Book';
+        font-size: 12px;
+        strong{
+          font-family: 'Verlag-Bold';
+        }
+      }
+    }
+  }
+
+  &[data-unit-main=unit-brasil]{
+    top: 450px;
+    left: 490px;
+    color:#000;
+    text-align: left;
+    h1{
+      color: $brasil-color;
+    }
+  }
+}
+
+.banner-global {
+	background: url('../../assets/images/banners-internos/global.jpg');
+}
+
+
+.mapa {
+	padding-top: 130px;
+	padding-bottom: 60px;
+	overflow: hidden;
+	position: relative;
+}
+
+svg {
+	width: 100%;
+}
+
+.modal-country {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 41px;
+	bottom: 185px;
+	z-index: 23;
+	display: none;
+
+	.icon-location {
+		width: 26px;
+		height: 26px;
+		display: block;
+		background: url('../../assets/images/circle-map.png');
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: none;
+	}
+
+	h2 {
+		color: #fff;
+		font-family: 'Verlag-Bold';
+		font-size: 30px;
+	}
+
+	h3 {
+		color: #fff;
+		font-family: 'Verlag-Bold';
+		font-size: 20px;
+		margin-top: 15px;
+		cursor: pointer;
+	}
+
+	span.endereco {
+		display: block;
+		font-family: 'Gotham-Light';
+		font-size: 12px;
+		color: #fff;
+	}
+
+	span.telefone {
+		display: block;
+		font-family: 'Gotham-Medium_0';
+		font-size: 16px;
+		margin-top: 5px;
+		color: #fff;
+
+		.number {
+			font-size: 12px;
+		}
+	}
+
+	.content-accordion {
+		display: none;
+	}
+
+	.informacoes {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 20px;
+		border-radius: 12px;
+	}
+}
+
+.modal-country.modal-brasil {
+	top: 406.581787109375px;
+	left: 578.6552734375px;
+}
+
+.path-active.brasil {
+	fill: #4579bd !important;
+}
+
+.path-active.estados-unidos {
+	fill: #4579bd !important;
+}
+
+.teste-box{
+  fill:#000000 !important;
+  fill-opacity:1;
+}

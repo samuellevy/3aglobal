@@ -13,23 +13,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
   <!-- CSS -->
-  <?= $this->Html->css('Site.normalize.css') ?>
-  <?= $this->Html->css('Site.main.css') ?>
-  <?= $this->Html->css('Site.font-awesome.css') ?>
+  <?= $this->Html->css('normalize.css') ?>
+  <?= $this->Html->css('main.css?string='.uniqid()) ?>
+  <?= $this->Html->css('font-awesome.css') ?>
 
   <!-- SCRIPTS -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <?= $this->Html->script('Site.vendor/modernizr-2.7.1.min.js') ?>
-  <?= $this->Html->script('Site.jquery.onepage-scroll.js') ?>
-  <?= $this->Html->script('Site.main.js') ?>
+  <?= $this->Html->script('vendor/modernizr-2.7.1.min.js') ?>
+  <?= $this->Html->script('jquery.onepage-scroll.js') ?>
+  <?= $this->Html->script('main.js?string='.uniqid()) ?>
 
   <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 
-  <?= $this->Html->css('Site.onepage-scroll.css') ?>
+  <?= $this->Html->css('onepage-scroll.css') ?>
 
-  <?= $this->Html->script('Site.slick.js') ?>
-  <?= $this->Html->css('Site.slick.css') ?>
-  <?= $this->Html->css('Site.slick-theme.css') ?>
+  <?= $this->Html->script('slick.js') ?>
+  <?= $this->Html->css('slick.css') ?>
+  <?= $this->Html->css('slick-theme.css') ?>
 </head>
 
 <body>
@@ -51,6 +51,6 @@
   <div class="main">
     <?= $this->fetch('content') ?>
   </div>
-  <?= $this->Html->script('Site.trigger.js') ?>
+  <?= $this->Html->script('trigger.js') ?>
 </body>
 </html>
