@@ -11,7 +11,7 @@
             <thead>
               <tr>
                   <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                  <th scope="col"><?= $this->Paginator->sort('nome') ?></th>
+                  <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('email') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('site') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('tipo', ['label'=>'Status']) ?></th>
@@ -22,7 +22,7 @@
               <?php foreach ($affiliates as $affiliate): ?>
               <tr>
                   <td><?= $this->Number->format($affiliate->id) ?></td>
-                  <td><?= h($affiliate->nome) ?></td>
+                  <td><?= h($affiliate->name) ?></td>
                   <td><?= h($affiliate->email) ?></td>
                   <td><?= h($affiliate->site) ?></td>
                   <td><?= h($affiliate->tipo) ?></td>
