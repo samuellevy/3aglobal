@@ -49,13 +49,13 @@ section{
     }
     .title_home{
       font-family: $verlag-light;
-      font-size: 36px;
+      font-size: 50px;
       color: #000;
       width: 100%;
       text-align: center;
       padding: 150px 0;
       opacity: 1;
-      text-transform: uppercase;
+      text-transform: lowercase;
       span{
         font-family: $verlag-bold;
       }
@@ -185,7 +185,7 @@ section{
     display: flex;
     .big_title{
       color: #000;
-      text-transform: uppercase;
+      text-transform: lowercase;
       font-size: 177px;
       line-height: 140px;
       text-align: center;
@@ -210,6 +210,9 @@ section{
         height: 610px;
         position: relative;
         width: 100%;
+        div{
+          text-transform: lowercase;
+        }
         .title-more-medium{
           display: none;
         }

@@ -53,22 +53,22 @@
 		margin: 0 auto;
 		.title_country{
 			font-family: $verlag-bold;
-			font-size: 40px;
+			font-size: 56px;
 			color: #000;
 			text-align: center;
-			text-transform: uppercase;
+			text-transform: lowercase;
 		}
 		.link_country{
 			font-family: $verlag-light;
 			text-align: center;
 			display: table;
 			width: auto;
-			text-transform: uppercase;
+			text-transform: lowercase;
 			padding: 8px 10px;
 			cursor: pointer;
 			margin: 0 auto;
 			color: #fff;
-			font-size: 14px;
+			font-size: 18px;
 			margin-top: 7px;
 			background: #000;
 			transition: all .5 linear;
