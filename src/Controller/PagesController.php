@@ -24,7 +24,6 @@ class PagesController extends AppController
           'contain' => ['Files', 'Marcas', 'Offices', 'Clients', 'Clients.Files']
       ]);
 
-      // die(debug($affiliate));
       $this->set('affiliate', $affiliate);
       $this->set('_serialize', ['affiliate']);
     }
