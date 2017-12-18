@@ -13,8 +13,18 @@ class PagesController extends AppController
       parent::beforeFilter($event);
     }
 
-    public function home()
-    {
+    public function home(){
 
+    }
+    public function network($id=null){
+      $this->viewBuilder()->setLayout('Site.network');
+
+      $this->loadModel('Affiliates');
+      $affiliate = $this->Affiliates->get($id, [
+          'contain' => ['Files']
+      ]);
+      
+      $this->set('affiliate', $affiliate);
+      $this->set('_serialize', ['affiliate']);
     }
 }

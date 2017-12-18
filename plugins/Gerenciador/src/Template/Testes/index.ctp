@@ -1,2 +1,0 @@
-Plugin
-<?= $this->fetch('content') ?>

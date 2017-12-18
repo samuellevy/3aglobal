@@ -20,9 +20,8 @@
     <?= $this->Html->css('light-bootstrap-dashboard.css') ?>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <?= $this->Html->css('pe-icon-7-stroke.css') ?>
-    <?= $this->Html->css('main.css') ?>
-
-
+    <?= $this->Html->css('main.css?build='.uniqid()) ?>
+    
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
@@ -50,22 +49,22 @@
   </div>
 </body>
 
-<?= $this->Html->script('jquery-1.10.2.js') ?>
-<?= $this->Html->script('bootstrap.min.js') ?>
+<?= $this->Html->script('../vendor/jquery-1.10.2.js') ?>
+<?= $this->Html->script('../vendor/bootstrap.min.js') ?>
 <!--  Checkbox, Radio & Switch Plugins -->
-<?= $this->Html->script('bootstrap-checkbox-radio-switch.js') ?>
+<?= $this->Html->script('../vendor/bootstrap-checkbox-radio-switch.js') ?>
 <!--  Charts Plugin -->
-<?= $this->Html->script('chartist.min.js') ?>
+<?= $this->Html->script('../vendor/chartist.min.js') ?>
 <!--  Notifications Plugin    -->
-<?= $this->Html->script('bootstrap-notify.js') ?>
+<?= $this->Html->script('../vendor/bootstrap-notify.js') ?>
 <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-<?= $this->Html->script('light-bootstrap-dashboard.js') ?>
+<?= $this->Html->script('../vendor/light-bootstrap-dashboard.js') ?>
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-<?= $this->Html->script('demo.js') ?>
+<?= $this->Html->script('../vendor/demo.js') ?>
 
-<?= $this->Html->script('script.js');?>
+<?= $this->Html->script('script.js?build='.uniqid());?>
 
-<?= $this->Html->script('ckeditor/ckeditor.js');?>
+<?= $this->Html->script('../vendor/ckeditor/ckeditor.js');?>
 
 
 <script type="text/javascript">

@@ -1,0 +1,15 @@
+.form-group {
+  .form-box-image{
+    width: 270px;
+    position: relative;
+    .form-img {
+      width: 100%;
+      cursor: pointer;
+    }
+    .remove{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+}

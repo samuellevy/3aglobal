@@ -72,7 +72,7 @@ class AffiliatesController extends AppController
     public function edit($id = null)
     {
         $affiliate = $this->Affiliates->get($id, [
-            'contain' => []
+            'contain' => ['Files']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $affiliate = $this->Affiliates->patchEntity($affiliate, $this->request->getData());
@@ -108,6 +108,6 @@ class AffiliatesController extends AppController
     }
 
     public function funcao($nome){
-      
+
     }
 }

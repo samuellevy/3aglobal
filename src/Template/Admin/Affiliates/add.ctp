@@ -6,7 +6,7 @@
           <h4 class="title">Register new affiliate</h4>
         </div>
         <div class="content">
-          <?= $this->Form->create($affiliate) ?>
+          <?= $this->Form->create($affiliate, ['obs'=>'file']) ?>
           <div class="row">
             <div class="col-md-4">
               <div class="form-group">
@@ -45,14 +45,65 @@
               </div>
             </div>
           </div>
-
-          <!--div class="row">
-            <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
               <div class="form-group">
                 <label>Marca</label><br/>
-                <img alt="140x140" data-src="holder.js/140x140" class="img-rounded" style="width: 140px; height: 140px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNjAwZTVhNWI0MSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2MDBlNWE1YjQxIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA1NDY4NzUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">   </div>
+                <figure class="form-box-img">
+                  <img alt="270x270" data-src="holder.js/270x270" class="img-rounded form-img" src="http://via.placeholder.com/270x270">
+                </figure>
+                <?php echo $this->Form->file('files.0.filename', ['class'=>'form-file']);?>
+                <?php echo $this->Form->hidden('files.0.entity', ['class'=>'form-file', 'value'=>'Affiliate']);?>
+                <?php echo $this->Form->hidden('files.0.obs', ['class'=>'form-file', 'value'=>'Marca']);?>
+              </div>
             </div>
-          </div-->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Fundo</label><br/>
+                <figure class="form-box-img">
+                  <img alt="270x270" data-src="holder.js/270x270" class="img-rounded form-img" src="http://via.placeholder.com/270x270">
+                </figure>
+                <?php echo $this->Form->file('files.1.filename', ['class'=>'form-file']);?>
+                <?php echo $this->Form->hidden('files.1.entity', ['class'=>'form-file', 'value'=>'Affiliate']);?>
+                <?php echo $this->Form->hidden('files.1.obs', ['class'=>'form-file', 'value'=>'Fundo']);?>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Office1</label><br/>
+                <figure class="form-box-img">
+                  <img alt="270x270" data-src="holder.js/270x270" class="img-rounded form-img" src="http://via.placeholder.com/270x270">
+                </figure>
+                <?php echo $this->Form->file('files.2.filename', ['class'=>'form-file']);?>
+                <?php echo $this->Form->hidden('files.2.entity', ['class'=>'form-file', 'value'=>'Affiliate']);?>
+                <?php echo $this->Form->hidden('files.2.obs', ['class'=>'form-file', 'value'=>'Office1']);?>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Office2</label><br/>
+                <figure class="form-box-img">
+                  <img alt="270x270" data-src="holder.js/270x270" class="img-rounded form-img" src="http://via.placeholder.com/270x270">
+                </figure>
+                <?php echo $this->Form->file('files.3.filename', ['class'=>'form-file']);?>
+                <?php echo $this->Form->hidden('files.3.entity', ['class'=>'form-file', 'value'=>'Affiliate']);?>
+                <?php echo $this->Form->hidden('files.3.obs', ['class'=>'form-file', 'value'=>'Office2']);?>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Office3</label><br/>
+                <figure class="form-box-img">
+                  <img alt="270x270" data-src="holder.js/270x270" class="img-rounded form-img" src="http://via.placeholder.com/270x270">
+                </figure>
+                <?php echo $this->Form->file('files.4.filename', ['class'=>'form-file']);?>
+                <?php echo $this->Form->hidden('files.4.entity', ['class'=>'form-file', 'value'=>'Affiliate']);?>
+                <?php echo $this->Form->hidden('files.4.obs', ['class'=>'form-file', 'value'=>'Office3']);?>
+              </div>
+            </div>
+          </div>
 
           <div class="row">
             <div class="col-md-9">

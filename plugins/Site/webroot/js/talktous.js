@@ -12,5 +12,4 @@ $(function() {
 		$('.btn-logo-clients').removeClass('hide');
 		$('.btn-logo-clients').addClass('show');
 	});
-	document.body.style.zoom="80%";
 });

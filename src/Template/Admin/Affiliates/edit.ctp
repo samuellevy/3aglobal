@@ -49,6 +49,20 @@
           <div class="row">
             <div class="col-md-9">
               <div class="form-group">
+                <label>Foto</label><br/>
+                <div class="form-box-image">
+                  <?php echo $this->Html->image('uploads/'.$affiliate['files'][0]['filename'], ['class'=>'form-img', 'data-uid'=>$affiliate['files'][0]['id']]);?>
+                  <?php echo $this->Form->file('files.0.filename', ['class'=>'form-file', 'data-uid'=>$affiliate['files'][0]['id']]);?>
+                  <button type="button" class="btn btn-danger btn-fill remove" data-uid="<?=$affiliate['files'][0]['id'];?>">Remover</button>
+                  <?php //echo $this->Form->file('files.1.file', ['class'=>'form-file']);?>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="form-group">
                 <?php echo $this->Form->control('description', ['class'=>'form-control ckeditor', 'label'=>'Presentation']); ?>
               </div>
             </div>

@@ -37,6 +37,14 @@ class AffiliatesTable extends Table
     $this->setPrimaryKey('id');
 
     $this->addBehavior('Timestamp');
+
+    $this->hasMany('Files', [
+        'className' => 'Files',
+        'foreignKey' => 'model_id',
+        'conditions' => [
+          'entity' => 'Affiliate'
+        ]
+    ]);
   }
 
   /**
