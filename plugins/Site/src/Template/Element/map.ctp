@@ -7615,7 +7615,8 @@
     </g>
     <g id="argentina-box" class="box south-america">
       <text transform="matrix(1 0 0 1 1100.4841 1250.863)" class="st1 st2 st3">ARGENTINA</text>
-      <text transform="matrix(1 0 0 1 1100.9489 1290.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/1'">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1100.9489 1290.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/1'">Argentina 1</a></text>
+      <text transform="matrix(1 0 0 1 1100.9489 1335.0000)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/4'">Argentina 2</a></text>
     </g>
     <g id="portugal-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1196.4841 604.863)" class="st1 st2 st3">PORTUGAL</text>
