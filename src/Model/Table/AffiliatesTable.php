@@ -45,6 +45,33 @@ class AffiliatesTable extends Table
           'entity' => 'Affiliate'
         ]
     ]);
+
+    $this->hasMany('Marcas', [
+        'className' => 'Files',
+        'foreignKey' => 'model_id',
+        'conditions' => [
+          'entity' => 'Affiliate',
+          'obs' => 'Marca'
+        ]
+    ]);
+
+    $this->hasMany('Offices', [
+        'className' => 'Files',
+        'foreignKey' => 'model_id',
+        'conditions' => [
+          'entity' => 'Affiliate',
+          'obs' => 'Office'
+        ]
+    ]);
+
+    // $this->hasMany('Offices', [
+    //     'className' => 'Files',
+    //     'foreignKey' => 'model_id',
+    //     'conditions' => [
+    //       'entity' => 'Affiliate',
+    //       'obs' => 'Office'
+    //     ]
+    // ]);
   }
 
   /**
@@ -72,7 +99,7 @@ class AffiliatesTable extends Table
     ->allowEmpty('description');
 
     $validator
-    ->email('email')
+    //->email('email')
     ->allowEmpty('email');
 
     return $validator;
@@ -85,10 +112,10 @@ class AffiliatesTable extends Table
   * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
   * @return \Cake\ORM\RulesChecker
   */
-  public function buildRules(RulesChecker $rules)
-  {
-    $rules->add($rules->isUnique(['email']));
-
-    return $rules;
-  }
+  // public function buildRules(RulesChecker $rules)
+  // {
+  //   $rules->add($rules->isUnique(['email']));
+  //
+  //   return $rules;
+  // }
 }

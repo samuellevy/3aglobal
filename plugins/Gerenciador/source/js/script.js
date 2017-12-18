@@ -36,7 +36,7 @@ $(document).ready(function(){
   });
 });
 
-function removeFileFromServer(var id){
+function removeFileFromServer(id){
   $.ajax({
     url: "",
     cache: false

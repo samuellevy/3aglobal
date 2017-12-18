@@ -43,13 +43,23 @@ class FilesTable extends Table
     $this->setPrimaryKey('id');
 
     $this->addBehavior('Timestamp');
+
+    $this->belongsTo('Affiliates');
   }
 
   public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
   {
-    $old_photo = $this->find('all')->where('id = 32');
-
-    //die(debug($old_photo));
+    // $old_file = $this->find('all', [
+    //     'conditions' => [
+    //       'entity'=>$data['entity'],
+    //       'obs'=>$data['obs'],
+    //       'model_id'=>$data['model_id']
+    //     ]
+    // ]);
+    // $row = $old_file->first();
+    //
+    // die(debug($data));
+    // die(debug($row));
 
     if (!empty($data['filename']['name'])) {
       $file = $data['filename'];

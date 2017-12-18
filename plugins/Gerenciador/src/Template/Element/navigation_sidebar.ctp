@@ -12,9 +12,9 @@
         </a>
     </li>
     <li>
-        <a href="<?= $this->Url->build(["controller" => "testimonials","action" => "index"]);?>">
+        <a href="<?= $this->Url->build(["controller" => "affiliates","action" => "index"]);?>">
             <i class="pe-7s-world"></i>
-            <p>Depoimentos</p>
+            <p>Affiliates</p>
         </a>
     </li>
     <!-- <li>

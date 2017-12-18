@@ -72,8 +72,10 @@ class AffiliatesController extends AppController
     public function edit($id = null)
     {
         $affiliate = $this->Affiliates->get($id, [
-            'contain' => ['Files']
+            'contain' => ['Marcas', 'Offices']
         ]);
+
+        //die(debug($affiliate));
         if ($this->request->is(['patch', 'post', 'put'])) {
             $affiliate = $this->Affiliates->patchEntity($affiliate, $this->request->getData());
             if ($this->Affiliates->save($affiliate)) {
