@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Clients Model
  *
+ * @property \Cake\ORM\Association\BelongsTo $Affiliates
+ *
  * @method \App\Model\Entity\Client get($primaryKey, $options = [])
  * @method \App\Model\Entity\Client newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Client[] newEntities(array $data, array $options = [])
@@ -33,10 +35,23 @@ class ClientsTable extends Table
         parent::initialize($config);
 
         $this->setTable('clients');
-        $this->setDisplayField('title');
+        $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+
+        $this->belongsTo('Affiliates', [
+            'foreignKey' => 'affiliate_id'
+        ]);
+
+        $this->hasMany('Files', [
+            'className' => 'Files',
+            'foreignKey' => 'model_id',
+            'conditions' => [
+              'entity' => 'Client',
+              'obs' => 'Marca'
+            ]
+        ]);
     }
 
     /**
@@ -52,11 +67,25 @@ class ClientsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->allowEmpty('title');
+            ->allowEmpty('name');
 
         $validator
             ->allowEmpty('description');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['affiliate_id'], 'Affiliates'));
+
+        return $rules;
     }
 }

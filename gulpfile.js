@@ -21,7 +21,7 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
   runSequence(
-    'clean:dist',
+    //'clean:dist',
     ['sass', 'images', 'fonts', 'js'],
     callback
   )

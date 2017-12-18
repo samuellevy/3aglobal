@@ -21,9 +21,10 @@ class PagesController extends AppController
 
       $this->loadModel('Affiliates');
       $affiliate = $this->Affiliates->get($id, [
-          'contain' => ['Files']
+          'contain' => ['Files', 'Marcas', 'Offices', 'Clients', 'Clients.Files']
       ]);
-      
+
+      // die(debug($affiliate));
       $this->set('affiliate', $affiliate);
       $this->set('_serialize', ['affiliate']);
     }

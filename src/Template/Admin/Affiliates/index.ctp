@@ -12,6 +12,7 @@
               <tr>
                   <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('name') ?></th>
+                  <th scope="col"><?= $this->Paginator->sort('country') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('email') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('site') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('tipo', ['label'=>'Status']) ?></th>
@@ -23,6 +24,7 @@
               <tr>
                   <td><?= $this->Number->format($affiliate->id) ?></td>
                   <td><?= h($affiliate->name) ?></td>
+                  <td><?= h($affiliate->country) ?></td>
                   <td><?= h($affiliate->email) ?></td>
                   <td><?= h($affiliate->site) ?></td>
                   <td><?= h($affiliate->tipo) ?></td>

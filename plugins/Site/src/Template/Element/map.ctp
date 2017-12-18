@@ -7607,87 +7607,87 @@
     </g>
     <g id="russia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 2814.4526 444.8462)" class="st1 st2 st3">RÚSSIA</text>
-      <text transform="matrix(1 0 0 1 2816.9175 484.9701)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 2816.9175 484.9701)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/15'">Contact us</a></text>
     </g>
     <g id="alemanha-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1281.4841 497.8631)" class="st1 st2 st3">ALEMANHA</text>
-      <text transform="matrix(1 0 0 1 1283.949 537.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1283.949 537.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/6'">Contact us</a></text>
     </g>
     <g id="argentina-box" class="box south-america">
       <text transform="matrix(1 0 0 1 1100.4841 1250.863)" class="st1 st2 st3">ARGENTINA</text>
-      <text transform="matrix(1 0 0 1 1100.9489 1290.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1100.9489 1290.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/1'">Contact us</a></text>
     </g>
     <g id="portugal-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1196.4841 604.863)" class="st1 st2 st3">PORTUGAL</text>
-      <text transform="matrix(1 0 0 1 1196.949 644.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1196.949 644.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/13'">Contact us</a></text>
     </g>
     <g id="marrocos-box" class="box africa">
       <text transform="matrix(1 0 0 1 1180.4841 665.863)" class="st1 st2 st3">MARROCOS</text>
-      <text transform="matrix(1 0 0 1 1180.949 705.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='marrocos.html'">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1180.949 705.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/10'">Contact us</a></text>
     </g>
     <g id="mocambique-box" class="box africa">
       <text transform="matrix(1 0 0 1 1780.9928 1154.8206)" class="st1 st2 st3">MOÇAMBIQUE</text>
-      <text transform="matrix(1 0 0 1 1783.4576 1194.9241)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1783.4576 1194.9241)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/11'">Contact us</a></text>
     </g>
     <g id="emirados-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1916.993 876.8308)"><tspan x="0" y="0" class="st1 st2 st3">EMIRADOS </tspan><tspan x="0" y="45.1" class="st1 st2 st3">ÁRABES</tspan></text>
-      <text transform="matrix(1 0 0 1 1919.4579 958.9241)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1919.4579 958.9241)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/18'">Contact us</a></text>
     </g>
     <g id="india-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1958.2814 791.9352)" class="st1 st2 st3">ÍNDIA</text>
-      <text transform="matrix(1 0 0 1 1960.7462 832.0387)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1960.7462 832.0387)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/7'">Contact us</a></text>
     </g>
     <g id="polonia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1245.8145 477.9507)" class="st1 st2 st3">POLÔNIA</text>
-      <text transform="matrix(1 0 0 1 1248.2793 518.0541)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1248.2793 518.0541)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/'">Contact us</a></text>
     </g>
     <g id="suica-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1330.2755 534.2301)" class="st1 st2 st3">SUÍÇA</text>
-      <text transform="matrix(1 0 0 1 1330.2755 569.6669)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1330.2755 569.6669)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/'">Contact us</a></text>
     </g>
     <g id="romenia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1316.2145 538.7977)" class="st1 st2 st3">ROMÊNIA</text>
-      <text transform="matrix(1 0 0 1 1316.2145 583.5679)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1316.2145 583.5679)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/14'">Contact us</a></text>
     </g>
     <g id="reino-unido-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1295.5006 422.1559)"><tspan x="0" y="0" class="st1 st2 st3">REINO </tspan><tspan x="0" y="45.1" class="st1 st2 st3">UNIDO</tspan></text>
-      <text transform="matrix(1 0 0 1 1297.9655 508.2594)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1297.9655 508.2594)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/19'">Contact us</a></text>
     </g>
     <g id="suecia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1449.3219 329.4414)" class="st1 st2 st3">SUÉCIA</text>
-      <text transform="matrix(1 0 0 1 1451.7867 369.5449)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1451.7867 369.5449)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/17'">Contact us</a></text>
     </g>
     <g id="grecia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1295.5579 602.7644)" class="st1 st2 st3">GRÉCIA</text>
-      <text transform="matrix(1 0 0 1 1298.0227 642.8679)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1298.0227 642.8679)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/'">Contact us</a></text>
     </g>
     <g id="chile-box" class="box south-america">
       <text transform="matrix(1 0 0 1 800.4841 1200.863)" class="st1 st2 st3">CHILE</text>
-      <text transform="matrix(1 0 0 1 802.9489 1240.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 802.9489 1240.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/3'">Contact us</a></text>
     </g>
     <g id="chipre-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1276.2814 663.9352)" class="st1 st2 st3">CHIPRE</text>
-      <text transform="matrix(1 0 0 1 1278.7462 704.0387)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1278.7462 704.0387)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/'">Contact us</a></text>
     </g>
     <g id="colombia-box" class="box south-america">
       <text transform="matrix(1 0 0 1 658.4841 892.863)" class="st1 st2 st3">COLÔMBIA</text>
-      <text transform="matrix(1 0 0 1 660.9489 932.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 660.9489 932.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/2'">Contact us</a></text>
     </g>
     <g id="panama-box" class="box central-america">
       <text transform="matrix(1 0 0 1 720.4841 894.863)" class="st1 st2 st3">PANAMÁ</text>
-      <text transform="matrix(1 0 0 1 722.9489 934.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 722.9489 934.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/12'">Contact us</a></text>
     </g>
     <g id="espanha-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1241.2902 595.2568)" class="st1 st2 st3">ESPANHA</text>
-      <text transform="matrix(1 0 0 1 1243.755 635.3807)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1243.755 635.3807)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/16'">Contact us</a></text>
     </g>
     <g id="mexico-box" class="box central-america">
       <text transform="matrix(1 0 0 1 499.4841 761.863)" class="st1 st2 st3">MÉXICO</text>
-      <text transform="matrix(1 0 0 1 501.9489 801.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 501.9489 801.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/9'">Contact us</a></text>
     </g>
     <g id="italia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1298.4841 564.863)" class="st1 st2 st3">ITÁLIA</text>
-      <text transform="matrix(1 0 0 1 1300.949 604.9869)" class="st4 st5 st6"><a class="click_more_map">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1300.949 604.9869)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='http://192.168.2.23/3aglobal-backend/pages/network/8'">Contact us</a></text>
     </g>
     </svg>
     <div class="map-box-country" data-unit-main="unit-brasil">

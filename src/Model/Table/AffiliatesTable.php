@@ -39,29 +39,34 @@ class AffiliatesTable extends Table
     $this->addBehavior('Timestamp');
 
     $this->hasMany('Files', [
-        'className' => 'Files',
-        'foreignKey' => 'model_id',
-        'conditions' => [
-          'entity' => 'Affiliate'
-        ]
+      'className' => 'Files',
+      'foreignKey' => 'model_id',
+      'conditions' => [
+        'entity' => 'Affiliate'
+      ]
     ]);
 
     $this->hasMany('Marcas', [
-        'className' => 'Files',
-        'foreignKey' => 'model_id',
-        'conditions' => [
-          'entity' => 'Affiliate',
-          'obs' => 'Marca'
-        ]
+      'className' => 'Files',
+      'foreignKey' => 'model_id',
+      'conditions' => [
+        'entity' => 'Affiliate',
+        'obs' => 'Marca'
+      ]
     ]);
 
     $this->hasMany('Offices', [
-        'className' => 'Files',
-        'foreignKey' => 'model_id',
-        'conditions' => [
-          'entity' => 'Affiliate',
-          'obs' => 'Office'
-        ]
+      'className' => 'Files',
+      'foreignKey' => 'model_id',
+      'conditions' => [
+        'entity' => 'Affiliate',
+        'obs' => 'Office'
+      ]
+    ]);
+
+    $this->hasMany('Clients', [
+      'className' => 'Clients',
+      'foreignKey' => 'affiliate_id'
     ]);
 
     // $this->hasMany('Offices', [

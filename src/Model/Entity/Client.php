@@ -7,6 +7,7 @@ use Cake\ORM\Entity;
  * Client Entity
  *
  * @property int $id
+ * @property int $affiliate_id
  * @property string $title
  * @property string $description
  * @property \Cake\I18n\Time $created
