@@ -21,3 +21,6 @@
 
 /plugins/Gerenciador/webroot
 /plugins/Gerenciador/webroot/**/*
+
+package-lock.json
+composer.lock
