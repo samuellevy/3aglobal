@@ -33,12 +33,14 @@
         <div class="split">
           <div class="title">Talk to us</div>
           <div class="form">
+            <?= $this->Form->create($contact); ?>
             <form action="">
-              <input type="text" placeholder="Name"/>
-              <input type="text" placeholder="E-mail"/>
-              <textarea placeholder="Message"></textarea>
-              <button>Send</button>
+              <?= $this->Form->control('name', ['placeholder' => 'Name','label'=>'']);?>
+              <?= $this->Form->control('email', ['placeholder' => 'E-mail','label'=>'']);?>
+              <?= $this->Form->control('message', ['placeholder' => 'Message','label'=>'']);?>
+              <button type="submit">Send</button>
             </form>
+            <?= $this->Form->end(); ?>
           </div>
         </div>
         <div class="split">

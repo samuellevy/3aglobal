@@ -25,6 +25,7 @@
 </head>
 
 <body>
+  <?= $this->Flash->render() ?>
   <?= $this->fetch('content') ?>
   <script src="js/trigger.js"></script>
 </body>
