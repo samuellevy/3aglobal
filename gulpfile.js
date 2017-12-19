@@ -7,7 +7,7 @@ var runSequence = require('run-sequence');
 var cache = require('gulp-cache');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
-
+var tinypng = require('gulp-tinypng');
 var source = './source/';
 var target = './plugins/Site/webroot/';
 var tasks = requireDir('./tasks');
@@ -21,7 +21,7 @@ gulp.task('default', function(callback) {
 
 gulp.task('build', function(callback) {
   runSequence(
-    //'clean:dist',
+    'clean:dist',
     ['sass', 'images', 'fonts', 'js'],
     callback
   )
@@ -61,9 +61,18 @@ gulp.task('sass', function () {
 
 gulp.task('images', function() {
   return gulp.src(source + 'images/**/*.+(png|jpg|jpeg|gif|svg)')
-  .pipe(cache(imagemin({
+  .pipe(imagemin({
     interlaced: true,
-  })))
+    progressive: true,
+    optimizationLevel: 5,
+    svgoPlugins: [{removeViewBox: false}]
+  }))
+  .pipe(gulp.dest(target + 'images'))
+});
+
+gulp.task('compress', function() {
+  return gulp.src(target + 'images/**/*.+(png|jpg|jpeg)')
+  .pipe(tinypng('OL3Y5eFrYwhFEg2jrWa6Ijk9P_Enbgie'))
   .pipe(gulp.dest(target + 'images'))
 });
 
