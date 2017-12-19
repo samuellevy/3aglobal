@@ -184,7 +184,7 @@ $(function(){
 		}]
 	});
 
-	$('#world-map').load('mapa.html');
+	//$('#world-map').load('mapa.html');
 
 
 
