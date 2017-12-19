@@ -48,7 +48,9 @@
           <div class="banner-logos">
             <?php foreach($affiliate['clients'] as $client):?>
               <?php foreach($client['files'] as $file):?>
-                <?php echo $this->Html->image('uploads/'.$file['filename'], ['class'=>'btn-logo-clients', 'data-id'=>$file['id']]);?>
+                <div class="btn-logo-clients" data-id="<?=$file['id']?>">
+                  <?php echo $this->Html->image('uploads/'.$file['filename'], ['class'=>'btn-logo-clients', 'data-id'=>$file['id']]);?>
+                </div>
               <?php endforeach;?>
             <?php endforeach;?>
           </div>
