@@ -16,8 +16,8 @@
 /vendor
 /vendor/*
 
-/webroot
-/webroot/*
+/plugins/Site/webroot
+/plugins/Site/webroot/*
 
 /plugins/Gerenciador/webroot
 /plugins/Gerenciador/webroot/**/*
