@@ -17,12 +17,12 @@
             <p>Affiliates</p>
         </a>
     </li>
-    <!-- <li>
-        <a href="<?= $this->Url->build(["controller" => "Affiliates","action" => "index"]);?>">
+    <li>
+        <a href="<?= $this->Url->build(["controller" => "clients","action" => "index"]);?>">
             <i class="pe-7s-users"></i>
             <p>Clients</p>
         </a>
-    </li> -->
+    </li>
 <?php /*
     <li>
         <a href="<?= $this->Url->build(["controller" => "Produtos","action" => "index"]);?>">

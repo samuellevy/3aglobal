@@ -49,7 +49,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="form-group">
-                <label>Marca</label><br/>
+                <label>Logo</label><br/>
                 <figure class="form-box-img">
                   <?php if(isset($affiliate['files'][0])):?>
                     <?php echo $this->Html->image('uploads/'.$affiliate['files'][0]['filename'], ['class'=>'form-img', 'data-uid'=>$affiliate['files'][0]['id']]);?>
@@ -64,7 +64,7 @@
             </div>
             <div class="col-md-3">
               <div class="form-group">
-                <label>Fundo</label><br/>
+                <label>Background</label><br/>
                 <figure class="form-box-img">
                   <?php if(isset($affiliate['files'][1])):?>
                     <?php echo $this->Html->image('uploads/'.$affiliate['files'][1]['filename'], ['class'=>'form-img', 'data-uid'=>$affiliate['files'][0]['id']]);?>

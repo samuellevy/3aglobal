@@ -79,7 +79,7 @@ class ClientsController extends AppController
   public function edit($id = null)
   {
     $client = $this->Clients->get($id, [
-      'contain' => ['Marcas', 'Offices']
+      'contain' => ['Files']
     ]);
     $affiliates = $this->Clients->Affiliates->find('list', ['limit' => 200]);
     //die(debug($client));

@@ -25,7 +25,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="form-group">
-                <label>Marca</label><br/>
+                <label>File</label><br/>
                 <figure class="form-box-img">
                   <img alt="270x270" data-src="holder.js/270x270" class="img-rounded form-img" src="http://via.placeholder.com/270x270">
                   <?php echo $this->Form->file('files.0.filename', ['class'=>'form-file']);?>
