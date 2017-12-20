@@ -14,7 +14,7 @@
   <?= $this->Html->css('font-awesome.css') ?>
 
   <!-- SCRIPTS -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <?= $this->Html->script('vendor/jquery-1.9.1.min.js') ?>
   <?= $this->Html->script('vendor/modernizr-2.7.1.min.js') ?>
 
   <?= $this->Html->script('slick.js?string=') ?>
