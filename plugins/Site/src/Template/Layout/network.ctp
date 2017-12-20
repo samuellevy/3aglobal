@@ -10,15 +10,15 @@
 
   <!-- CSS -->
   <?= $this->Html->css('normalize.css') ?>
-  <?= $this->Html->css('main.css?string='.uniqid()) ?>
+  <?= $this->Html->css('main.css?string=') ?>
   <?= $this->Html->css('font-awesome.css') ?>
 
   <!-- SCRIPTS -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <?= $this->Html->script('vendor/modernizr-2.7.1.min.js') ?>
 
-  <?= $this->Html->script('slick.js?string='.uniqid()) ?>
-  <?= $this->Html->script('talktous.js?string='.uniqid()) ?>
+  <?= $this->Html->script('slick.js?string=') ?>
+  <?= $this->Html->script('talktous.js?string=') ?>
 
   <?= $this->Html->css('slick.css') ?>
   <?= $this->Html->css('slick-theme.css') ?>
@@ -27,6 +27,5 @@
 <body>
   <?= $this->Flash->render() ?>
   <?= $this->fetch('content') ?>
-  <script src="js/trigger.js"></script>
 </body>
 </html>
