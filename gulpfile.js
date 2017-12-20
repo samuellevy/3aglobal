@@ -60,13 +60,18 @@ gulp.task('sass', function () {
 });
 
 gulp.task('images', function() {
-  return gulp.src(source + 'images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src(source + 'images/**/*.+(png|jpg|jpeg|svg)')
   .pipe(imagemin({
     interlaced: true,
     progressive: true,
     optimizationLevel: 5,
     svgoPlugins: [{removeViewBox: false}]
   }))
+  .pipe(gulp.dest(target + 'images'))
+});
+
+gulp.task('gif', function() {
+  return gulp.src(source + 'images/**/*.+(gif)')
   .pipe(gulp.dest(target + 'images'))
 });
 

@@ -14,14 +14,15 @@
 
   <!-- CSS -->
   <?= $this->Html->css('normalize.css') ?>
-  <?= $this->Html->css('main.css?string='.uniqid()) ?>
+  <?= $this->Html->css('main.css?string='/*.uniqid()*/) ?>
   <?= $this->Html->css('font-awesome.css') ?>
 
   <!-- SCRIPTS -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <?php //<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>?>
+  <?= $this->Html->script('vendor/jquery-1.9.1.min.js') ?>
   <?= $this->Html->script('vendor/modernizr-2.7.1.min.js') ?>
   <?= $this->Html->script('jquery.onepage-scroll.js') ?>
-  <?= $this->Html->script('main.js?string='.uniqid()) ?>
+  <?= $this->Html->script('main.js?string='/*.uniqid()*/) ?>
 
   <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 
@@ -51,6 +52,6 @@
   <div class="main">
     <?= $this->fetch('content') ?>
   </div>
-  <?= $this->Html->script('trigger.js') ?>
+  <? //= $this->Html->script('trigger.js') ?>
 </body>
 </html>
