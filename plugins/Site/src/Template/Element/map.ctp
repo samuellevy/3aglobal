@@ -7554,7 +7554,7 @@
     </g>
     <g id="eua-box" class="box north-america">
       <text transform="matrix(1 0 0 1 970.5087 586.3322)" class="st1 st2 st3">United States</text>
-      <text transform="matrix(1 0 0 1 972.9736 626.4357)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/20'">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 972.9736 626.4357)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='http://3aww.com/usa/'">Contact us</a></text>
     </g>
     <g id="russia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 2814.4526 444.8462)" class="st1 st2 st3">RUSSIA</text>
@@ -7632,11 +7632,11 @@
     </g>
     <g id="espanha-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1241.2902 595.2568)" class="st1 st2 st3">SPAIN</text>
-      <text transform="matrix(1 0 0 1 1243.755 635.3807)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/16'">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1243.755 635.3807)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='http://3aww.com/es/'">Contact us</a></text>
     </g>
     <g id="mexico-box" class="box central-america">
       <text transform="matrix(1 0 0 1 499.4841 761.863)" class="st1 st2 st3">MEXICO</text>
-      <text transform="matrix(1 0 0 1 501.9489 801.9869)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/9'">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 501.9489 801.9869)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='http://3aww.com.mx/'">Contact us</a></text>
     </g>
     <g id="italia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1298.4841 564.863)" class="st1 st2 st3">ITALY</text>
