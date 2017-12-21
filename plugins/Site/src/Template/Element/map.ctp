@@ -7603,8 +7603,8 @@
       <text transform="matrix(1 0 0 1 1316.2145 583.5679)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/14'">Contact us</a></text>
     </g>
     <g id="reino-unido-box" class="box eurasia">
-      <text transform="matrix(1 0 0 1 1295.5006 422.1559)"><tspan x="0" y="0" class="st1 st2 st3">UNITED </tspan><tspan x="0" y="45.1" class="st1 st2 st3">KINGDOM</tspan></text>
-      <text transform="matrix(1 0 0 1 1297.9655 508.2594)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/19'">Contact us</a></text>
+      <text transform="matrix(1 0 0 1 1205 422)"><tspan x="0" y="0" class="st1 st2 st3">UNITED </tspan><tspan x="0" y="45.1" class="st1 st2 st3">KINGDOM</tspan></text>
+      <text transform="matrix(1 0 0 1 1207 508)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/19'">Contact us</a></text>
     </g>
     <g id="suecia-box" class="box eurasia">
       <text transform="matrix(1 0 0 1 1449.3219 329.4414)" class="st1 st2 st3">SWEDEN</text>
