@@ -14,7 +14,7 @@
 
   <!-- CSS -->
   <?= $this->Html->css('normalize.css') ?>
-  <?= $this->Html->css('main.css?string='/*.uniqid()*/) ?>
+  <?= $this->Html->css('main.css?string='.uniqid()) ?>
   <?= $this->Html->css('font-awesome.css') ?>
 
   <!-- SCRIPTS -->
@@ -22,7 +22,7 @@
   <?= $this->Html->script('vendor/jquery-1.9.1.min.js') ?>
   <?= $this->Html->script('vendor/modernizr-2.7.1.min.js') ?>
   <?= $this->Html->script('jquery.onepage-scroll.js') ?>
-  <?= $this->Html->script('main.js?string='/*.uniqid()*/) ?>
+  <?= $this->Html->script('main.js?string='.uniqid()) ?>
 
   <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 
