@@ -203,6 +203,9 @@ function changeCountry(country_id){
 		case "brasil":
 		country_color = "#3865B2";
 		break;
+		case "equador":
+		country_color = "#3865B2";
+		break;
 		case "eua":
 		country_color = "#FF6900";
 		break;

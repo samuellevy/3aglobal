@@ -1,5 +1,5 @@
-<?= $this->Html->script('Site.mapa.js') ?>
-<?= $this->Html->css('Site.world-map.css') ?>
+<?= $this->Html->script('Site.mapa.js?string='.uniqid()) ?>
+<?= $this->Html->css('Site.world-map.css?string='.uniqid()) ?>
 
 <div class="world-map-box">
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -7539,6 +7539,10 @@
           S1734,1145.4,1733.5,1145.8L1733.5,1145.8z"/>
         </g>
       </g>
+    </g>
+    <g id="equador-box" class="box south-america">
+      <text transform="matrix(1 0 0 1 670 936)" class="st1 st2 st3">Ecuador</text>
+      <text transform="matrix(1 0 0 1 670 976)" class="st4 st2 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/5'">Contact us</a></text>
     </g>
     <g id="brasil-box" class="box south-america is-active">
       <text transform="matrix(1 0 0 1 1221.9928 1076.8206)" class="st1 st2 st3">BRAZIL</text>
