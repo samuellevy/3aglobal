@@ -76,7 +76,7 @@
           <li><?=$this->Html->image('Site.../images/clientes/google.png');?>
           <li><?=$this->Html->image('Site.../images/clientes/gsk.png');?>
 
-          <li><?=$this->Html->image('Site.../images/clientes/netshoes.png');?>
+          <li><?=$this->Html->image('Site.../images/clientes/shindler.png');?>
           <li><?=$this->Html->image('Site.../images/clientes/quaker.png');?>
           <li><?=$this->Html->image('Site.../images/clientes/samsung.png');?>
 
