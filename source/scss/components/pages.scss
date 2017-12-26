@@ -55,7 +55,7 @@ section{
       text-align: center;
       padding: 150px 0;
       opacity: 1;
-      text-transform: lowercase;
+      text-transform: uppercase;
       span{
         font-family: $verlag-bold;
       }
@@ -403,7 +403,6 @@ section{
 }
 #Headquarters{
   background-image: url('../images/bg_white.png');
-  background-color: #FF7F50;
 
   .element-title{
     width: 100%;
