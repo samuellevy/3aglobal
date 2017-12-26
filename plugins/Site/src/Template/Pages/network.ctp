@@ -1,5 +1,5 @@
 <div title="Basic dialog" class="talktous" data-dialog="brasil">
-  <?= $this->Html->link('Voltar | X', ['controller'=>'pages','action'=>'home'], ['class'=>'close_back']);?>
+  <?= $this->Html->link('Return | X', ['controller'=>'pages','action'=>'home'], ['class'=>'close_back']);?>
   <div class="bg" style="background-image: url(<?php echo $this->Url->image('uploads/'.$affiliate['offices'][0]['filename'], ['class'=>'form-img', 'data-uid'=>$affiliate['offices'][0]['id']]);?>)"></div>
   <div class="bg_2"></div>
   <div class="box-table">
