@@ -90,11 +90,12 @@
 
 .vertical_text{
 	position: absolute;
-	left: -90px;
+	left: -100px;
 	top: 370px;
-	font-size: 18px;
+	font-size: 28px;
 	color: $gray;
 	text-align: left;
+	text-transform: lowercase;
 	line-height: 0;
 	font-family: "Verlag-Light";
 	line-height: 2em;
