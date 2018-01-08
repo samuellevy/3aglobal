@@ -14,7 +14,7 @@
 </section>
 
 <section id="About">
-  <div class="vertical_text">BRANDS BEYOND BORDERS</div>
+  <div class="vertical_text">brands beyond borders</div>
   <div class="wrapper">
     <div class="content">
       <!--h1 class="revealOnScroll" data-animation="fadeInUp">Trigger a CSS animation on scroll</h1-->
@@ -147,7 +147,31 @@
 
 
       <ul class="slider mobile-slider slider-nav">
-          <li data-country="brasil"> <span>Brazil</span> </li> <li data-country="eua"> <span>United States</span> </li> <li data-country="mexico"> <span>Mexico</span> </li> <li data-country="espanha"> <span>Spain</span> </li> <li data-country="equador"> <span>Ecuador</span> </li> <li data-country="alemanha"> <span>Germany</span> </li> <li data-country="argentina"> <span>Argentina</span> </li><li data-country="chile"> <span>Chile</span> </li> <li data-country="chipre"> <span>Cyprus</span> </li> <li data-country="colombia"> <span>Colombia</span> </li> <li data-country="emirados"> <span>UAE</span> </li> <li data-country="grecia"> <span>Greece</span> </li> <li data-country="india"> <span>India</span> </li> <li data-country="italia"> <span>Italy</span> </li> <li data-country="marrocos"> <span>Morocco</span> </li> <li data-country="mocambique"> <span>Mozambique</span> </li> <li data-country="panama"> <span>Panama</span> </li> <li data-country="polonia"> <span>Poland</span> </li> <li data-country="portugal"> <span>Portugal</span> </li> <li data-country="reino-unido"> <span>United Kingdom</span> </li> <li data-country="romenia"> <span>Romania</span> </li> <li data-country="russia"> <span>Russia</span> </li> <li data-country="suecia"> <span>Sweden</span> </li> <li data-country="suica"> <span>Switzerland</span></li>
+          <li data-country="brasil"><span><a class="click_more_map" onclick="window.location.href='http://3aworldwide.com.br/contato'">Brazil</a></span></li>
+          <li data-country="eua"><span><a class="click_more_map" onclick="window.location.href='http://3aww.com/usa/'">United States</a></span></li>
+          <li data-country="mexico"><span><a class="click_more_map" onclick="window.location.href='http://3aww.com.mx/'">Mexico</a></span></li>
+          <li data-country="espanha"><span><a class="click_more_map" onclick="window.location.href='http://3aww.com/es/'">Spain</a></span></li>
+          <li data-country="equador"><span>Ecuador</span></li>
+          <li data-country="alemanha"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/6'">Germany</a></span></li>
+          <li data-country="argentina"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/1'">Argentina 1</a></span></li>
+          <li data-country="argentina"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/4'">Argentina 2</a></span></li>
+          <li data-country="chile"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/3'">Chile</a></span></li>
+          <li data-country="chipre"><span>Cyprus</span></li>
+          <li data-country="colombia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/2'">Colombia</a></span></li>
+          <li data-country="emirados"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/18'">UAE</a></span></li>
+          <li data-country="grecia"><span>Greece</span></li>
+          <li data-country="india"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/7'">India</a></span></li>
+          <li data-country="italia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/8'">Italy</a></span></li>
+          <li data-country="marrocos"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/10'">Morocco</a></span></li>
+          <li data-country="mocambique"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/11'">Mozambique</a></span></li>
+          <li data-country="panama"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/12'">Panama</a></span></li>
+          <li data-country="polonia"><span>Poland</span></li>
+          <li data-country="portugal"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/13'">Portugal</a></span></li>
+          <li data-country="reino-unido"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/19'">United Kingdom</a></span></li>
+          <li data-country="romenia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/14'">Romania</a></span></li>
+          <li data-country="russia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/15'">Russia</a></span></li>
+          <li data-country="suecia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/17'">Sweden</a></span></li>
+          <li data-country="suica"><span>Switzerland</span></li>
       </ul>
     </div>
     <div class="wrapper-full">
@@ -159,3 +183,5 @@
     </div>
   </div>
 </section>
+
+<footer>Copyright 3aworldwide 2018</footer>
