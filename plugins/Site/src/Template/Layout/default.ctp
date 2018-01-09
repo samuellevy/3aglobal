@@ -52,6 +52,5 @@
   <div class="main">
     <?= $this->fetch('content') ?>
   </div>
-  <? //= $this->Html->script('trigger.js') ?>
 </body>
 </html>
