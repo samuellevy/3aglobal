@@ -35,6 +35,7 @@
           <div class="form">
             <?= $this->Form->create($contact); ?>
             <form action="">
+              <?= $this->Form->hidden('affiliate_id', ['value' => $affiliate->id]);?>
               <?= $this->Form->control('name', ['placeholder' => 'Name','label'=>'']);?>
               <?= $this->Form->control('email', ['placeholder' => 'E-mail','label'=>'']);?>
               <?= $this->Form->control('message', ['placeholder' => 'Message','label'=>'']);?>

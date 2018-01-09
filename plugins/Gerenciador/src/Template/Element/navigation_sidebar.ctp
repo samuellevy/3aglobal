@@ -1,4 +1,5 @@
 <ul class="nav">
+  <?php if($user_role_id == 1):?>
     <li>
         <a href="<?= $this->Url->build(["controller" => "Pages","action" => "home"]);?>">
             <i class="pe-7s-graph"></i>
@@ -23,6 +24,13 @@
             <p>Clients</p>
         </a>
     </li>
+  <?php endif;?>
+  <li>
+      <a href="<?= $this->Url->build(["controller" => "messages","action" => "index"]);?>">
+          <i class="pe-7s-users"></i>
+          <p>Messages</p>
+      </a>
+  </li>
 <?php /*
     <li>
         <a href="<?= $this->Url->build(["controller" => "Produtos","action" => "index"]);?>">

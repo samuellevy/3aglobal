@@ -45,6 +45,9 @@ class AppController extends Controller
     public function beforeFilter(Event $event)
     {
         $this->viewBuilder()->theme('Gerenciador'); // AppUI is my plugin name
+        //die(debug($this->Auth->user('role_id')));
+
+        $this->set('user_role_id', $this->Auth->user('role_id'));
         $this->set('username', $this->Auth->user('username'));
     }
 }
