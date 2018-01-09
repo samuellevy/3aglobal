@@ -46,7 +46,7 @@
   </div>
   <div class="btnMenuBox">
     <div class="btnMenu">
-      <span class="open">&#9776;</span>
+      <span class="open"></span>
     </div>
   </div>
   <div class="main">

@@ -66,20 +66,41 @@
   height: 40px;
   z-index: 1;
   .btnMenu{
-    width: 60px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
     color: #000000;
     float: right;
     .open{
-      top: 5px;
-      right: 20px;
-      width: 30px;
+      top: 25px;
+      right: 25px;
       z-index: 9;
       position: absolute;
-      font-size: 30px;
       opacity: 1;
+      height: 0px;
+      border: 2px solid black;
+      width: 30px;
       transition: opacity .5s;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: -2px;
+        height: 0px;
+        border: 2px solid black;
+        width: 30px;
+        transition: opacity .5s;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        top: 22px;
+        right: -2px;
+        height: 0px;
+        border: 2px solid black;
+        width: 30px;
+        transition: opacity .5s;
+      }
     }
     &.active .open{
       opacity: 0;
