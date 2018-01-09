@@ -233,6 +233,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 1024px) {
   #About {
     .element-message {
@@ -307,6 +308,13 @@
   .country{
     .description{
       text-align: center;
+    }
+  }
+  .talktous .box-table .content .box .banner-logos .btn-logo-clients {
+    width: 50%;
+    margin: auto;
+    &:last-child{
+      margin: auto;
     }
   }
 }
@@ -403,6 +411,7 @@
   #Home{
     display: block;
     height: 100% !important;
+    min-height: 650px;
     .control_ball{
       margin-top: -230px;
       padding-right: 40px;
@@ -638,6 +647,9 @@
       }
     }
   }
+  .talktous .box-table .content .box .banner-logos .btn-logo-clients {
+    width: 33%;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -742,6 +754,13 @@
   .big_title{
     text-align: center;
   }
+  .talktous .box-table .content .box .banner-logos .btn-logo-clients {
+    width: 50%;
+    margin: auto;
+    &:last-child{
+      margin: auto;
+    }
+  }
 }
 
 @media only screen and(max-width: 380px){
@@ -843,6 +862,9 @@
         }
       }
     }
+  }
+  .talktous .box-table .content .box .banner-logos .btn-logo-clients {
+    width: 100%;
   }
 }
 
