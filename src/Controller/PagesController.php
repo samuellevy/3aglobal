@@ -33,7 +33,7 @@ class PagesController extends AppController
     if ($this->request->is('post')) {
       $contact = $this->Contacts->patchEntity($contact, $this->request->getData());
       if ($this->Contacts->save($contact)) {
-        $this->Flash->success(__('The contact has been saved.'));
+        $this->Flash->success(__('The contact has been sent.'));
 
         return $this->redirect(['action' => 'network',$id]);
       }
