@@ -8,44 +8,48 @@ class MessagesController extends AppController
     $messages = $this->paginate($this->Messages, [
       'contain'=>['Affiliates'],
       'order'=>['created'=>'DESC']]);
-    $this->set(compact('messages'));
-    $this->set('_serialize', ['messages']);
-    $this->loadModel('Institutes');
-    //die(debug($messages));
-    // $institutes = $this->Institutes->find('all');
-    // $institutes = $institutes->all();
-    // $this->set(compact('institutes'));
-    // $this->set('_serialize', ['']);
-  }
-
-  public function delete($id = null){
-    $this->request->allowMethod(['post', 'delete']);
-    $message = $this->Messages->get($id);
-    if ($this->Messages->delete($message)) {
-      $this->Flash->success(__('The message has been deleted.'));
-    } else {
-      $this->Flash->error(__('The message could not be deleted. Please, try again.'));
+      $this->set(compact('messages'));
+      $this->set('_serialize', ['messages']);
+      $this->loadModel('Institutes');
+      //die(debug($messages));
+      // $institutes = $this->Institutes->find('all');
+      // $institutes = $institutes->all();
+      // $this->set(compact('institutes'));
+      // $this->set('_serialize', ['']);
     }
 
-    return $this->redirect(['action' => 'index']);
-  }
+    public function delete($id = null){
+      $this->request->allowMethod(['post', 'delete']);
+      $message = $this->Messages->get($id);
+      if ($this->Messages->delete($message)) {
+        $this->Flash->success(__('The message has been deleted.'));
+      } else {
+        $this->Flash->error(__('The message could not be deleted. Please, try again.'));
+      }
 
-  public function read($id = null)
-  {
-    $message = $this->Messages->get($id, ['contain'=>['Affiliates']]);
-    $lida=1;
-    $message->status=$lida;
-    $this->set('message', $message);
-    $this->set('_serialize', ['message']);
-    // die(debug($message));
-    // $this->loadModel('Institutes');
-    // $institutes = $this->Institutes->find('all');
-    // $institutes = $institutes->all();
-    // $this->set(compact('institutes'));
-    // $this->set('_serialize', ['institutes']);
-  }
+      return $this->redirect(['action' => 'index']);
+    }
 
-  public function return(){
-    return $this->redirect(['action' => 'index']);
+    public function read($id = null)
+    {
+      $message = $this->Messages->get($id, ['contain'=>['Affiliates']]);
+      $lida=1;
+      $message->status=$lida;
+      $this->set('message', $message);
+      $this->set('_serialize', ['message']);
+      // die(debug($message));
+      // $this->loadModel('Institutes');
+      // $institutes = $this->Institutes->find('all');
+      // $institutes = $institutes->all();
+      // $this->set(compact('institutes'));
+      // $this->set('_serialize', ['institutes']);
+
+      $post_data = ['Message.read'=>1];
+      $table = $this->Messages->patchEntity($message, $post_data);
+      $this->Messages->save($table);  //update record
+    }
+
+    public function return(){
+      return $this->redirect(['action' => 'index']);
+    }
   }
-}
