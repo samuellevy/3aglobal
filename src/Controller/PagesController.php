@@ -6,6 +6,7 @@ use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
 use Cake\Event\Event;
+use Cake\Mailer\Email;
 
 class PagesController extends AppController
 {
@@ -34,6 +35,13 @@ class PagesController extends AppController
       $contact = $this->Contacts->patchEntity($contact, $this->request->getData());
       if ($this->Contacts->save($contact)) {
         $this->Flash->success(__('The contact has been sent.'));
+
+        // $email = new Email();
+        // $email
+        //     ->emailFormat('html')
+        //     ->to('samuel.levy@3aworldwide.com.br')
+        //     ->from('desenvolvimento@3aww.com.br')
+        //     ->send('teste');
 
         return $this->redirect(['action' => 'network',$id]);
       }
