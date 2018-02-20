@@ -41,6 +41,7 @@ class PagesController extends AppController
             ->emailFormat('html')
             ->subject('Message from 3aW')
             ->to('3a@3aww.com.br')
+            ->addTo('mdecardenas@3aww.com')
             ->addTo('samuel.levy@3aworldwide.com.br')
             ->addTo('vinicius.machado@3aworldwide.com.br')
             ->from('desenvolvimento@3aww.com.br')
