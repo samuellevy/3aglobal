@@ -42,11 +42,11 @@ class PagesController extends AppController
         $email
             ->emailFormat('html')
             ->subject('Message from 3aW')
-            ->to('3a@3aww.com.br')
+            ->to('desenvolvimento@3aworldwide.com.br')
             // ->addTo($affiliate->email)
             ->addTo('samuel.levy@3aworldwide.com.br')
             ->addTo('vinicius.machado@3aworldwide.com.br')
-            ->from('desenvolvimento@3aww.com.br')
+            ->from('desenvolvimento@3aworldwide.com.br')
             ->send('Name: ' . $contact['name']."<br>"."E-mail: ".$contact['email']."<br>"."Message: " . $contact['message']);
 
         return $this->redirect(['action' => 'network',$id]);
