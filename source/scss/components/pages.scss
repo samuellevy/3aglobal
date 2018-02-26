@@ -3,7 +3,7 @@
   0% {
     transform: rotate(0deg)
   }
-
+  
   to {
     transform: rotate(1turn)
   }
@@ -12,7 +12,7 @@
   0% {
     transform: rotate(0deg)
   }
-
+  
   to {
     transform: rotate(-1turn)
   }
@@ -91,7 +91,7 @@ section{
 #About{
   background-color: #000;
   background-image: url('../images/bg_black.png');
-
+  
   .content{
     display: table;
     align-items: center;
@@ -113,13 +113,13 @@ section{
         width: 23%;
       }
       h2{
-
+        
       }
     }
   }
-
+  
   /* Animations */
-
+  
   .element-side-text{
     position: relative;
     z-index: 0;
@@ -152,6 +152,10 @@ section{
     transition: top 2s;
     &.animated{
       top: -120px;
+      animation-name: ball;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
     }
   }
   .element-message{
@@ -168,7 +172,7 @@ section{
       top: 160px;
     }
   }
-
+  
 }
 
 
@@ -178,7 +182,7 @@ section{
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
-
+  
   .content{
     width: 100%;
     height: 100%;
@@ -199,9 +203,9 @@ section{
     .wrapper{
       display: flex;
       align-items: center;
-
+      
       .element-service{
-
+        
       }
       .area-util{
         display: flex;
@@ -296,6 +300,11 @@ section{
   background-color: #000000;
   position: relative;
 
+  .big_title{
+    font-size: 220px;
+    margin-top: -30px;
+  }
+  
   .vertical-title{
     position: absolute;
     top: 900px;
@@ -304,7 +313,7 @@ section{
     -webkit-transition: top 3s;
     transition: top 3s;
     z-index: 0;
-
+    
     &.animated{
       top: calc(50%);
     }
@@ -313,20 +322,20 @@ section{
       opacity: 0.1;
     }
   }
-
+  
   .content{
     display: flex;
     height: 100%;
     vertical-align: middle;
     display: relative;
     color: $white;
-
+    
     .box-list-clients{
       width: 50%;
       padding: 0 50px;
       display: flex;
       align-items: center;
-
+      
       ul.clients-ul{
         float: left;
         li{
@@ -338,7 +347,7 @@ section{
           }
         }
       }
-
+      
       /* Animations for image-box */
       ul.clients-ul li{
         //padding: 60px;
@@ -350,7 +359,7 @@ section{
           //padding: 12px;
         }
       }
-
+      
       ul.clients-ul li:nth-child(3n){
         //padding: 60px;
         opacity: 0;
@@ -361,7 +370,7 @@ section{
           //padding: 12px;
         }
       }
-
+      
       ul.clients-ul li:nth-child(5n){
         //padding: 40px;
         opacity: 0;
@@ -373,7 +382,7 @@ section{
         }
       }
     }
-
+    
     .box-description-clients{
       width: 50%;
       display: flex;
@@ -381,12 +390,12 @@ section{
       flex-wrap: wrap;
       padding: 0 80px;
       z-index:1;
-
+      
       .image-box{
         width: 100%;
         text-align: center;
         position: relative;
-
+        
         &::after{
           content: "";
           background: url("../images/scotch-tape.png");
@@ -403,7 +412,7 @@ section{
 }
 #Headquarters{
   background-image: url('../images/bg_white.png');
-
+  
   .element-title{
     width: 100%;
     text-align: left;
@@ -418,7 +427,7 @@ section{
       color: $darkgray;
     }
   }
-
+  
   .content{
     position: relative;
     height: 100%;
@@ -435,13 +444,13 @@ section{
       background-size: contain;
       margin-top: 170px;
       max-height: 650px;
-
+      
       .countries{
         width: 100%;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
-
+        
         .country{
           font-family: Verlag-Bold;
           width: 260px;
@@ -460,7 +469,7 @@ section{
       }
     }
   }
-
+  
   /* Animations */
   .element-country{
     width: 100%;
@@ -468,7 +477,7 @@ section{
     position: absolute;
     -webkit-transition: top 2s; /* For Safari 3.1 to 6.0 */
     transition: top 2s;
-
+    
     &[data-id='0']{
       top: -1200px;
     }
@@ -488,7 +497,7 @@ section{
 }
 #Network{
   background-color: $white;
-
+  
   .element-title{
     width: 100%;
     text-align: left;
@@ -503,7 +512,7 @@ section{
       color: $darkgray;
     }
   }
-
+  
   .content{
     display: flex;
     height: 100%;
@@ -512,26 +521,26 @@ section{
     padding: 160px 0;
     flex-direction: column;
     flex-wrap: wrap;
-
+    
     .slider{
       position: relative;
       z-index: 99;
     }
   }
-
+  
   .wrapper {
     height: initial;
   }
-
+  
   .world-map{
     width: 100%;
     //max-width: 110vh;
   }
-
+  
   .wrapper-full{
     width: 100%;
   }
-
+  
   #world-map{
     position: relative;
     margin-top: 30px;

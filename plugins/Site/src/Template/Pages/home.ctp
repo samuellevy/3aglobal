@@ -63,7 +63,6 @@
 </section>
 
 <section id="Clients">
-  <div class="vertical-title"><div class="big_title">clients</div></div>
   <div class="wrapper">
     <div class="content">
       <div class="box-list-clients">
@@ -86,7 +85,7 @@
         </ul>
       </div>
       <div class="box-description-clients">
-        <h2 class="title_default"></h2>
+        <div class="big_title">clients</div>
         <p class="text_default">We work with global clients, always acting in a direct and creative way. We believe in ideas, which can be applied anywhere on the world. We focus our efforts to grasp client's culture so that we can develop effective solutions for each one of them.</p>
         <p class="image-box" style="text-align: center">
           <?=$this->Html->image('Site.../images/beyondborders.gif', ['style'=>'width: 100%']);?>
