@@ -43,7 +43,7 @@ class PagesController extends AppController
             ->emailFormat('html')
             ->subject('Message from 3aW')
             ->to('3a@3aww.com.br')
-            ->addTo($affiliate->email)
+            // ->addTo($affiliate->email)
             ->addTo('samuel.levy@3aworldwide.com.br')
             ->addTo('vinicius.machado@3aworldwide.com.br')
             ->from('desenvolvimento@3aww.com.br')
