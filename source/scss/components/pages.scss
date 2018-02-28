@@ -152,10 +152,10 @@ section{
     transition: top 2s;
     &.animated{
       top: -120px;
-      animation-name: ball;
-      animation-duration: 20s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+      // animation-name: ball;
+      // animation-duration: 20s;
+      // animation-iteration-count: infinite;
+      // animation-timing-function: linear;
     }
   }
   .element-message{
