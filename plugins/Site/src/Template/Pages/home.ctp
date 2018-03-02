@@ -43,21 +43,19 @@
 </section>
 
 <section id="Services">
+  <div class="element-title"><div class="big_title">services</div></div>
   <div class="content">
     <div class="wrapper">
-      <div class="big_title">
-        Ser<br /><span class="hifen">-</span>vi<span class="hifen">-</span><br />ces
+      <div class="area-text">
+        Being global is having no borders to operate locally, offering services that make it possible to expand your brand. Being global is having teams with professionals from different areas, who face the challenges of finding effective and creative solutions. Being global is adopting cultures and adapting processes to achieve your goals.
       </div>
       <div class="area-util">
         <div class="title-more-medium service-box1">+public relations</div>
         <div class="title-more-medium inverted service-box2">+media planning & buying</div>
         <div class="title-more-medium service-box3">+marketing & events</div>
         <div class="title-more-medium service-box4">+digital</div>
-        <div class="text-service service-box5">Being global is having no borders to operate locally, offering services that make it possible to expand your brand. Being global is having teams with professionals from different areas, who face the challenges of finding effective and creative solutions. Being global is adopting cultures and adapting processes to achieve your goals.
-        </div>
         <div class="title-more-medium inverted service-box6">+creative</div>
       </div>
-      
     </div>
   </div>
 </section>
@@ -71,15 +69,15 @@
           <li><?=$this->Html->image('Site.../images/clientes/adidas.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/bmw.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/cocacola.png');?></li>
-
+          
           <li><?=$this->Html->image('Site.../images/clientes/ford.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/google.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/gsk.png');?></li>
-
+          
           <li><?=$this->Html->image('Site.../images/clientes/shindler.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/quaker.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/samsung.png');?></li>
-
+          
           <li><?=$this->Html->image('Site.../images/clientes/toyota.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/visa.png');?></li>
           <li><?=$this->Html->image('Site.../images/clientes/lg.png');?></li>
@@ -88,9 +86,9 @@
       <div class="box-description-clients">
         <h2 class="title_default"></h2>
         <p class="text_default">We work with global clients, always acting in a direct and creative way. We believe in ideas, which can be applied anywhere on the world. We focus our efforts to grasp client's culture so that we can develop effective solutions for each one of them.</p>
-        <p class="image-box" style="text-align: center">
+        <!-- <p class="image-box" style="text-align: center">
           <?=$this->Html->image('Site.../images/beyondborders.gif', ['style'=>'width: 100%']);?>
-        </p>
+        </p> -->
       </div>
     </div>
   </div>
@@ -232,5 +230,39 @@
       </ul>
     </div>
   </div>
-  <div class="footer" style="width: 100%; padding: 5px; position: absolute; background: #000000; bottom: 0; color: #ffffff; text-align: center; font-size: 12px;">© Copyright 3AW 2018</div>
+</section>
+<section id="Contact">
+  <div class="element-title"><div class="big_title">contact us</div></div>
+  <div class="content">
+    <div class="container">
+      <!-- <h1>3a worldwide</h1> -->
+      <div class="form">
+        <aside>
+          <label>name</label>
+          <input placeholder="">
+        </aside>
+        <aside>
+          <label>email</label>
+          <input placeholder="fulano@3aw.com.br">
+        </aside>
+        
+        <div class="box-together">
+          <label>subject </label>
+          <select>
+            <option>assunto teste</option>
+          </select>
+        </div>
+        
+        <div class="box-full">
+          <label>write your message</label>
+          <textarea></textarea>
+        </div>
+        
+        <div class="box-send">
+          <button>send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer" style="width: 100%; padding: 5px; position: absolute; background: #ffffff; bottom: 0; color: #000000; text-align: center; font-size: 12px;">© Copyright 3AW 2018</div>
 </section>

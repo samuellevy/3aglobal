@@ -159,13 +159,13 @@ section{
     }
   }
   .element-message{
-    background: url('../images/doc_about.png') center no-repeat;
+    background: url('../images/brands-beyond-out.jpg') center no-repeat;
     background-size: contain;
     width: 400px;
     height: 400px;
     position: absolute;
     top: 600px;
-    right: -20px;
+    right: -65px;
     -webkit-transition: top 2s; /* For Safari 3.1 to 6.0 */
     transition: top 2s;
     &.animated{
@@ -182,6 +182,16 @@ section{
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
+  
+  .element-title{
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    .big_title{
+      color: #000;
+    }
+  }
   
   .content{
     width: 100%;
@@ -206,6 +216,13 @@ section{
       
       .element-service{
         
+      }
+      .area-text{
+        width: 40%;
+        font-family: Verlag-Book;
+        font-size: 1.2vw;
+        color: #000;
+        line-height: 1.9vw;
       }
       .area-util{
         display: flex;
@@ -299,7 +316,7 @@ section{
   background-image: url('../images/bg_black.png');
   background-color: #000000;
   position: relative;
-
+  
   .big_title{
     font-size: 220px;
     margin-top: -30px;
@@ -547,5 +564,131 @@ section{
   }
   .mobile-list-afiliate{
     display: none;
+  }
+}
+
+#Contact{
+  background-color: #000;
+  background-image: url('../images/bg_black.png');
+  position: relative;
+  
+  .element-title{
+    opacity: 0.5;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 0;
+  }
+  
+  .content{
+    background-image: url('../images/bg-contact.png');
+    width: 100vw;
+    height: 900px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    // background-size: contain;
+    
+    .container{
+      margin: 0 auto;
+      width: 50vw;
+      text-align: center;
+    }
+    h1{
+      font-family: 'Verlag-Bold';
+      color: #FFF;
+      font-size: 50px;
+      width: 100%;
+    }
+    
+    .form{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      
+      label{
+        font-family: 'Verlag-Bold';
+        color: #FFF;
+        font-size: 40px;
+      }
+      
+      select{
+        margin-left: 20px;
+        width: 300px;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px #707378 solid;
+        border-radius: 0;
+        font-family: 'Verlag-Book';
+        font-size: 25px;
+        color: #707378;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+        background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#FFF' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        outline: 0;
+        padding: 0 0 10px 35px;
+      }
+      
+      input{
+        margin-left: 20px;
+        width: 300px;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px #707378 solid;
+        border-radius: 0;
+        font-family: 'Verlag-Book';
+        font-size: 25px;
+        color: #707378;
+        outline: 0;
+        padding: 0 0 0 35px;
+      }
+      
+      aside{
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 30px 0;
+      }
+      
+      .box-full{
+        width: 100%;
+        label{
+          width: 100%;
+          display: block;
+          margin: 30px 0;
+        }
+        
+        textarea{
+          width: 100%;
+          min-height: 190px;
+          background: transparent;
+          border: 1px #707378 solid;
+          border-radius: 0;
+          font-family: 'Verlag-Book';
+          font-size: 25px;
+          outline: 0;
+          color: #fff;
+          padding: 10px 15px;
+        }
+      }
+      
+      .box-together{
+        margin: 20px auto;
+      }
+      
+      .box-send{
+        margin: 30px auto;
+        width: 100%;
+        button{
+          padding: 10px 130px;
+          font-family: 'Verlag-Book';
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
