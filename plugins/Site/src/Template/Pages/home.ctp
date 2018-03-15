@@ -151,7 +151,7 @@
         <li data-country="chile"><span>Chile</span></li>
         <!-- <li data-country="chipre"><span>Cyprus</span></li> -->
         <li data-country="colombia"><span>Colombia</span></li>
-        <li data-country="emirados"><span>United Arab Emirates</span></li>
+        <!-- <li data-country="emirados"><span>United Arab Emirates</span></li> -->
         <!-- <li data-country="grecia"><span>Greece</span></li> -->
         <li data-country="india"><span>India</span></li>
         <li data-country="italia"><span>Italy</span></li>
@@ -178,7 +178,7 @@
         <li data-country="chile"><span>Chile</span></li>
         <!-- <li data-country="chipre"><span>Cyprus</span></li> -->
         <li data-country="colombia"><span>Colombia</span></li>
-        <li data-country="emirados"><span>United Arab Emirates</span></li>
+        <!-- <li data-country="emirados"><span>United Arab Emirates</span></li> -->
         <!-- <li data-country="grecia"><span>Greece</span></li> -->
         <li data-country="india"><span>India</span></li>
         <li data-country="italia"><span>Italy</span></li>
@@ -213,7 +213,7 @@
         <li data-country="chile"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/3'">Chile</a></span></li>
         <!-- <li data-country="chipre"><span>Cyprus</span></li> -->
         <li data-country="colombia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/2'">Colombia</a></span></li>
-        <li data-country="emirados"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/18'">United Arab Emirates</a></span></li>
+        <!-- <li data-country="emirados"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/18'">United Arab Emirates</a></span></li> -->
         <!-- <li data-country="grecia"><span>Greece</span></li> -->
         <li data-country="india"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/7'">India</a></span></li>
         <li data-country="italia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/8'">Italy</a></span></li>

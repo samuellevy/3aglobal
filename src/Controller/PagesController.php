@@ -46,6 +46,7 @@ class PagesController extends AppController
             ->addTo($affiliate->email)
             ->addTo('samuel.levy@3aworldwide.com.br')
             ->addTo('vinicius.machado@3aworldwide.com.br')
+            ->addTo('affiliates@3aw.com')
             ->from('desenvolvimento@3aworldwide.com.br')
             ->send('Name: ' . $contact['name']."<br>"."E-mail: ".$contact['email']."<br>"."Message: " . $contact['message']);
 
