@@ -330,7 +330,7 @@
       height: 250px;
     }
     .big_title {
-      font-size: 70px;
+      font-size: 160px;
     }
   }
   #Services{
@@ -403,7 +403,7 @@
   }
 
   .big_title{
-    font-size: 80px;
+    font-size: 70px !important;
     text-align: left;
     padding: 0 0 20px 0;
     line-height: 80px;
@@ -453,74 +453,96 @@
   }
 
   #About{
+    padding: 20px;
     display: block;
-
     .element-message{
       display: none;
     }
     .element-globe{
       display: none;
     }
+    .element-side-text{
+      margin: 0;
+      padding: 0;
+      p{
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        font-family: 'Verlag-Book';
+      }
+    }
+    .element-aboutus{
+      margin-top: initial;
+      br {
+        display: none;
+      }
+    }
     .content{
       height: initial;
       display: flex;
       flex-wrap: wrap-reverse;
-      padding: 20px;
       .tabled{
         width: 100% !important;
         padding: 0;
-        .element-side-text{
-          margin: 0;
-        }
-        .element-aboutus{
-          margin-top: initial;
-          .big-title{
-
-          }
-          br {
-            display: none;
-          }
-        }
       }
     }
   }
 
   #Services{
+    padding: 20px;
     display: block;
-    .content .wrapper .area-util{
-      .title-more-medium {
-        font-size: 33px;
-      }
-      .text-service{
-        font-size: 12px;
-
-      }
-      .service-box1{
-        left: 25px;
-        top: 1px;
-      }
-      .service-box2{
-        left: 25px;
-        top: 45px;
-      }
-      .service-box3{
-        left: 25px;
-        top: 135px;
-      }
-      .service-box4{
-        left: 25px;
-        top: 185px;
-      }
-      .service-box5{
-        width: 80%;
-        left: 60px;
-        top: 230px;
-      }
-      .service-box6{
-        left: 25px;
-        top: 420px;
-      }
+    .element-title{
+      position: relative;
+      top: 0;
     }
+    .content{
+      .wrapper {
+        flex-direction: column;
+        .area-text{
+          width: 100%;
+          font-size: 20px;
+          text-align: left;
+          line-height: 1.5;
+          letter-spacing: 0.5px;
+          font-family: 'Verlag-Book';
+        }
+        .area-util{
+          margin: 50px 0;
+          height: 50vw;
+          width: 100vw;
+          .title-more-medium {
+            font-size: 9vw;
+          }
+          .inverted{
+            border-bottom: 1vw solid #000;
+          }
+          .service-box1{
+            left: 18vw;
+            top: 1vw;
+          }
+          .service-box2{
+            left: 9vw;
+            top: 14vw;
+            font-size: 7vw;
+          }
+          .service-box3{
+            left: 16vw;
+            top: 23VW;
+          }
+          .service-box4{
+            left: 53vw;
+            top: 34vw;
+            font-size: 10vw;
+          }
+          .service-box6{
+            left: 14vw;
+            top: 34vw;
+            font-size: 10vw;
+          }
+        }
+      }
+    } 
   }
 
   #Clients{
@@ -655,98 +677,41 @@
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 510px) {
   #Services{
-    display: block;
-    .content .wrapper .area-util{
-      .title-more-medium {
-        font-size: 25px;
-      }
-      .text-service{
-        font-size: 12px;
-
-      }
-      .service-box1{
-        left: 25px;
-        top: 1px;
-      }
-      .service-box2{
-        left: 25px;
-        top: 35px;
-      }
-      .service-box3{
-        left: 25px;
-        top: 100px;
-      }
-      .service-box4{
-        left: 25px;
-        top: 140px;
-      }
-      .service-box5{
-        width: 80%;
-        left: 60px;
-        top: 180px;
-      }
-      .service-box6{
-        left: 25px;
-        top: 400px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #Services{
-    display: block;
-    background-image: none;
     .content{
-      .big_title{
-        font-size: 77px;
-        br{
-          display: none;
-        }
-        span.hifen{
-          display: none;
-        }
-      }
-      .wrapper{
-        flex-wrap: wrap;
-      }
-      .wrapper .area-util{
-        .title-more-medium {
-          font-size: 25px;
-        }
-        .text-service{
-          font-size: 12px;
-
-        }
-        .service-box1{
-          left: 25px;
-          top: 0px;
-        }
-        .service-box2{
-          left: 25px;
-          top: 35px;
-        }
-        .service-box3{
-          left: 25px;
-          top: 70px;
-        }
-        .service-box4{
-          left: 25px;
-          top: 110px;
-        }
-        .service-box5{
-          width: 80%;
-          left: 60px;
-          top: 150px;
-        }
-        .service-box6{
-          left: 25px;
-          top: 300px;
+      .wrapper {
+        .area-util{
+          margin: 25px 0;
+          .title-more-medium {
+            font-size: 11vw;
+          }
+          .service-box1{
+            left: 11vw;
+          }
+          .service-box2{
+            left: 7vw;
+            top: 16vw;
+            font-size: 8vw;
+          }
+          .service-box3{
+            left: 5vw;
+            top: 25VW;
+            font-size: 10.5vw;
+          }
+          .service-box4{
+            left: 50vw;
+            top: 39vw;
+            font-size: 10vw;
+          }
+          .service-box6{
+            left: 11vw;
+            top: 39vw;
+            font-size: 10vw;
+          }
         }
       }
-    }
+    } 
   }
 }
 
@@ -776,64 +741,6 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
-  #Services{
-    display: block;
-    .content{
-      .big_title{
-        font-size: 50px;
-        padding: 0 20px;
-        line-height: 90px;
-        font-style: normal;
-        width: 100%;
-        br{
-          display: none;
-        }
-        span.hifen{
-          display: none;
-        }
-      }
-      .wrapper{
-        flex-wrap: wrap;
-        .area-util{
-          height: 370px;
-          .title-more-medium {
-            font-size: 20px;
-          }
-          .text-service{
-            font-size: 12px;
-
-          }
-          .service-box1{
-            left: 25px;
-            top: 0px;
-          }
-          .service-box2{
-            left: 25px;
-            top: 25px;
-          }
-          .service-box3{
-            left: 25px;
-            top: 50px;
-          }
-          .service-box4{
-            left: 25px;
-            top: 75px;
-          }
-          .service-box5{
-            width: 80%;
-            left: 60px;
-            top: 100px;
-          }
-          .service-box6{
-            left: 25px;
-            top: 280px;
-          }
-        }
-      }
-    }
-  }
-}
 
 @media only screen and (max-width: 320px) {
   #Home{
