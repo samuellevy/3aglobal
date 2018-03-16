@@ -249,7 +249,13 @@
         <div class="box-together">
           <label>subject </label>
           <select>
-            <option>assunto teste</option>
+            <option>PR</option>
+            <option>contact</option>
+            <option>commend</option>
+            <option>complain</option>
+            <option>others</option>
+            <option>suggestion</option>
+            <option>work with us</option>
           </select>
         </div>
         
