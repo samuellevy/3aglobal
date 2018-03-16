@@ -32,16 +32,23 @@ class PagesController extends AppController
     $contact = $this->Contacts->newEntity();
 
     if ($this->request->is('post')) {
+      
       $contact = $this->Contacts->patchEntity($contact, $this->request->getData());
+
       if ($this->Contacts->save($contact)) {
         $this->Flash->success(__('The contact has been sent.'));
 
-        // $email = new Email();
-        // $email
-        //     ->emailFormat('html')
-        //     ->to('samuel.levy@3aworldwide.com.br')
-        //     ->from('desenvolvimento@3aww.com.br')
-        //     ->send('teste');
+        $email = new Email();
+        $email
+            ->emailFormat('html')
+            ->subject('Message from 3aW')
+            ->to('desenvolvimento@3aworldwide.com.br')
+            ->addTo($affiliate->email)
+            ->addTo('samuel.levy@3aworldwide.com.br')
+            ->addTo('vinicius.machado@3aworldwide.com.br')
+            ->addTo('affiliates@3aw.com')
+            ->from('desenvolvimento@3aworldwide.com.br')
+            ->send('Name: ' . $contact['name']."<br>"."E-mail: ".$contact['email']."<br>"."Message: " . $contact['message']);
 
         return $this->redirect(['action' => 'network',$id]);
       }
