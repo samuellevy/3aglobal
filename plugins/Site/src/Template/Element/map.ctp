@@ -7567,7 +7567,7 @@
     <g id="argentina-box" class="box south-america">
       <text transform="matrix(1 0 0 1 1100.4841 1250.863)" class="st1 st2 st3">ARGENTINA</text>
       <text transform="matrix(1 0 0 1 1100.9489 1290.9869)" class="st4 st2 st6">Contact us:</text>
-      <text transform="matrix(1 0 0 1 1130.9489 1342.5000)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/1'">Buenos Aires 1</a></text>
+      <text transform="matrix(1 0 0 1 1130.9489 1342.5000)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/1'">Buenos Aires</a></text>
       <!-- <text transform="matrix(1 0 0 1 1130.9489 1385.0000)" class="st4 st5 st6"><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/4'">Buenos Aires 2</a></text> -->
     </g>
     <g id="portugal-box" class="box eurasia">

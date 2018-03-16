@@ -146,8 +146,8 @@
         <li data-country="espanha"><span>Spain</span></li>
         <li data-country="equador"><span>Ecuador</span></li>
         <li data-country="alemanha"><span>Germany</span></li>
-        <li data-country="argentina"><span>Argentina 1</span></li>
-        <li data-country="argentina"><span>Argentina 2</span></li>
+        <li data-country="argentina"><span>Argentina</span></li>
+        <!-- <li data-country="argentina"><span>Argentina 2</span></li> -->
         <li data-country="chile"><span>Chile</span></li>
         <!-- <li data-country="chipre"><span>Cyprus</span></li> -->
         <li data-country="colombia"><span>Colombia</span></li>
@@ -173,8 +173,8 @@
         <li data-country="espanha"><span>Spain</span></li>
         <li data-country="equador"><span>Ecuador</span></li>
         <li data-country="alemanha"><span>Germany</span></li>
-        <li data-country="argentina"><span>Argentina 1</span></li>
-        <li data-country="argentina"><span>Argentina 2</span></li>
+        <li data-country="argentina"><span>Argentina</span></li>
+        <!-- <li data-country="argentina"><span>Argentina 2</span></li> -->
         <li data-country="chile"><span>Chile</span></li>
         <!-- <li data-country="chipre"><span>Cyprus</span></li> -->
         <li data-country="colombia"><span>Colombia</span></li>
@@ -208,8 +208,8 @@
         <li data-country="espanha"><span><a class="click_more_map" onclick="window.location.href='http://3aww.com/es/'">Spain</a></span></li>
         <li data-country="equador"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/5'">Ecuador</a></span></li>
         <li data-country="alemanha"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/6'">Germany</a></span></li>
-        <li data-country="argentina"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/1'">Argentina 1</a></span></li>
-        <li data-country="argentina"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/4'">Argentina 2</a></span></li>
+        <li data-country="argentina"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/1'">Argentina</a></span></li>
+        <!-- <li data-country="argentina"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/4'">Argentina 2</a></span></li> -->
         <li data-country="chile"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/3'">Chile</a></span></li>
         <!-- <li data-country="chipre"><span>Cyprus</span></li> -->
         <li data-country="colombia"><span><a class="click_more_map" onclick="window.location.href='<?=$this->Url->build([ "action" => "network" ]);?>/2'">Colombia</a></span></li>
