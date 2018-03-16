@@ -595,8 +595,14 @@ section{
     
     .container{
       margin: 0 auto;
-      width: 50vw;
+      width: 60vw;
       text-align: center;
+      @media screen and (max-width: 1450px) {
+        width: 70vw;
+      }
+      @media screen and (max-width: 1200px) {
+        width: 80vw;
+      }
     }
     h1{
       font-family: 'Verlag-Bold';
