@@ -162,38 +162,51 @@
   }
   
   #Services{
-    .content .wrapper .area-util{
-      .title-more-medium {
-        font-size: 53px;
-      }
-      .service-box1{
-        left: 25px;
-        top: 1px;
-      }
-      .service-box2{
-        left: 25px;
-        top: 65px;
-      }
-      .service-box3{
-        left: 25px;
-        top: 194px;
-      }
-      .service-box4{
-        left: 25px;
-        top: 269px;
-      }
-      .service-box5{
-        width: 80%;
-        left: 119px;
-        top: 340px;
-      }
-      .service-box6{
-        left: 25px;
-        top: 500px;
+    .element-title{
+      position: relative;
+    }
+    .content{
+      .wrapper{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .area-text{
+          width: 60%;
+          margin: 8vh 0 0;
+          font-size: 2vw;
+          line-height: 3.5vw;
+        }
+        .area-util{
+          width: 60%;
+          margin: 8vh 0 0;
+          .title-more-medium {
+            font-size: 7vw;
+          }
+          .service-box1{
+            top: 0;
+            left: 0;
+          }
+          .service-box2{
+            top: 80px;
+            left: 0;
+          }
+          .service-box3{
+            top: 150px;
+            left: 0;
+          }
+          .service-box4{
+            top: 220px;
+            left: 0;
+          }
+          .service-box6{
+            top: 310px;
+            left: 0;
+          }
+        }
       }
     }
   }
-  
+
   #Clients {
     .vertical-title {
       left: -241px;
@@ -333,42 +346,6 @@
       font-size: 160px;
     }
   }
-  #Services{
-    .content .wrapper .area-util{
-      .title-more-medium {
-        font-size: 43px;
-      }
-      .text-service{
-        font-size: 12px;
-        
-      }
-      .service-box1{
-        left: 25px;
-        top: 1px;
-      }
-      .service-box2{
-        left: 25px;
-        top: 65px;
-      }
-      .service-box3{
-        left: 25px;
-        top: 194px;
-      }
-      .service-box4{
-        left: 25px;
-        top: 269px;
-      }
-      .service-box5{
-        width: 80%;
-        left: 80px;
-        top: 340px;
-      }
-      .service-box6{
-        left: 25px;
-        top: 500px;
-      }
-    }
-  }
   .slider-nav{
     display: none;
   }
@@ -505,6 +482,7 @@
           line-height: 1.5;
           letter-spacing: 0.5px;
           font-family: 'Verlag-Book';
+          margin: 0;
         }
         .area-util{
           margin: 50px 0;
